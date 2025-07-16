@@ -1,0 +1,48 @@
+.mm-canvas {
+	background-color: var(--canvas-dim-colour);
+}
+
+.mm-panel {
+	background-color: var(--mm-ls-background-colour);
+	min-width: 750px;
+	min-height: 575px;
+}
+
+.mm-header {
+	margin-bottom: 60px;
+}
+
+.mm-banner {
+	top: 50px;
+	right: 50px;
+}
+
+.mm-banner-label-title {
+	color: var(--mm-label-title-colour);
+}
+
+.mm-banner-image-icon {
+	background-image: var(--mm-image-icon);
+	-unity-background-scale-mode: scale-to-fit;
+	width: 52px;
+	height: 61px;
+}
+
+.mm-image {
+	width: 160px;
+	height: 160px;
+}
+
+.mm-image-orientation {
+	background-image: var(--mm-image-orientation);
+	-unity-background-scale-mode: scale-to-fit;
+}
+
+.mm-image-biopsy {
+	background-image: var(--mm-image-biopsy);
+	-unity-background-scale-mode: scale-to-fit;
+}
+
+.mm-modules {
+	margin: 26px;
+}

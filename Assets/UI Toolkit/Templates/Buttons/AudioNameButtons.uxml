@@ -1,0 +1,13 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/RespiratoryStyleSheet.uss?fileID=7433441132597879392&amp;guid=4434f5011bc680f44858bc09b9328997&amp;type=3#RespiratoryStyleSheet" />
+    <engine:VisualElement name="AudioNameButtonsContainer" class="horizontalButtonContainer" style="flex-grow: 1;">
+        <engine:VisualElement name="AudioNamePlayContainer" style="flex-grow: 1;">
+            <engine:Button name="AudioPlayNameButton" class="audioButton" />
+            <engine:VisualElement name="Icon" style="background-image: url(&quot;project://database/Assets/Images/Icons/audio-play.png?fileID=21300000&amp;guid=540cf58b3858b3d478a73d38b00a2b48&amp;type=3#audio-play&quot;); position: absolute; left: 60px; flex-grow: 1; padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px; margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; align-items: center; justify-content: space-between; top: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="AudioNamePauseContainer" style="flex-grow: 1;">
+            <engine:Button name="AudioPauseNameButton" class="audioButton" />
+            <engine:VisualElement name="Icon" style="background-image: url(&quot;project://database/Assets/Images/Icons/audio-pause.png?fileID=21300000&amp;guid=7dcbb4c34ed903441871d16a59afab89&amp;type=3#audio-pause&quot;); position: absolute; left: 60px; flex-grow: 1; padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px; margin-left: 8px; margin-right: 8px; margin-top: 8px; margin-bottom: 8px; top: 0;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

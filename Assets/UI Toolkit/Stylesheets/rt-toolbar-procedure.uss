@@ -1,0 +1,94 @@
+.procedure-toolbar-btn {
+    background-color: var(--toolbar-procedure-background-colour);
+    border-color: var(--toolbar-procedure-border-colour);
+    width: 170px;
+    height: 100px;
+}
+
+.procedure-toolbar-btn:disabled {
+    background-color: var(--toolbar-procedure-background-colour);
+    border-color: var(--toolbar-procedure-border-colour);
+    opacity: 1;
+}
+
+.procedure-toolbar-btn:hover:enabled {
+    background-color: var(--toolbar-procedure-background-colour-hover);
+    border-color: var(--toolbar-procedure-border-colour-hover);
+}
+
+.procedure-toolbar-btn:hover:enabled > .procedure-toolbar-image {
+    -unity-background-image-tint-color: var(--toolbar-procedure-image-tint-colour-hover);
+}
+
+.procedure-toolbar-btn:hover:enabled > .procedure-toolbar-label {
+    color: var(--toolbar-procedure-label-colour-hover);
+}
+
+.procedure-toolbar-btn:active:enabled {
+    background-color: var(--toolbar-procedure-background-colour-active);
+    border-color: var(--toolbar-procedure-border-colour-active);
+}
+
+.procedure-toolbar-btn:active:enabled > .procedure-toolbar-image {
+    -unity-background-image-tint-color: var(--toolbar-procedure-image-tint-colour-active);
+}
+
+.procedure-toolbar-btn:active:enabled > .procedure-toolbar-label {
+    color: var(--toolbar-procedure-label-colour-active);
+    -unity-font-style:bold;
+}
+
+.procedure-toolbar-label {
+    color: var(--toolbar-procedure-label-colour);
+    font-weight: 500px;
+    line-height: 24px;
+    -unity-font-definition: url("project://database/Assets/VELCRO%20UI/Fonts%20&%20Materials/Lato-Regular.ttf?fileID=12800000&guid=96011ca8853d0584d9484fac4d071375&type=3#Lato-Regular");
+}
+
+.procedure-toolbar-image {
+    -unity-background-image-tint-color: var(--toolbar-procedure-image-tint-colour);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 48px;
+    height: 48px;
+}
+
+.procedure-toolbar-image-table .procedure-toolbar-image {
+    background-image: var(--toolbar-procedure-image-table);
+}
+
+.procedure-toolbar-image-patient-monitor .procedure-toolbar-image {
+    background-image: var(--toolbar-procedure-image-patient-monitor);
+}
+
+.procedure-toolbar-image-patient .procedure-toolbar-image {
+    background-image: var(--toolbar-procedure-image-patient);
+}
+
+.procedure-toolbar-image-front .procedure-toolbar-image {
+    background-image: var(--toolbar-procedure-image-front);
+}
+
+.procedure-toolbar-image-bronchoscope .procedure-toolbar-image {
+    background-image: var(--toolbar-procedure-image-bronchoscope);
+    width: 48;
+    height: 48;
+    margin-bottom: 4px;
+}
+
+.procedure-toolbar-image-bronch-monitor .procedure-toolbar-image {
+    background-image: var(--toolbar-procedure-image-bronch-monitor);
+}
+
+.procedure-toolbar {
+    background-color: var(--toolbar-procedure-background-colour);
+    border-color: var(--toolbar-procedure-border-colour);
+    width: 1100px;
+    height: 100px;
+}
+
+.procedure-toolbar-line {
+    background-color: var(--toolbar-procedure-line-colour);
+    width: 0;
+    height: 70px;
+}
+

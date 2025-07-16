@@ -1,0 +1,77 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-handbook.uss?fileID=7433441132597879392&amp;guid=20b4428ba4da416cad7fd4910f5442cf&amp;type=3#rt-handbook" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-steppers.uss?fileID=7433441132597879392&amp;guid=9c7a4f35d845a2d4b8da8894b698f41b&amp;type=3#velcro-steppers" />
+    <engine:VisualElement name="HandbookProgress" class="grow w-max-100 h-max-100">
+        <ui:VisualElement xmlns:ui="UnityEngine.UIElements" template="NodeStepperContainer" name="NodeStepperContainer" class="ml-48 mt-16 pl-16 mr-48 pr-16">
+            <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+            <ui:VisualElement name="NodeStepper" class="flex-row w-100">
+                <ui:VisualElement name="NodeContainerOne" class="justify-center align-items-center node-container">
+                    <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                        <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="LabelContainer">
+                        <ui:Label tabindex="-1" text="Washing" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="StepContainerOne" class="grow">
+                    <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                </ui:VisualElement>
+                <ui:VisualElement name="NodeContainerTwo" class="justify-center align-items-center node-container">
+                    <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                        <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="LabelContainer">
+                        <ui:Label tabindex="-1" text="Tissue Collection" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="StepContainerTwo" class="grow">
+                    <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                </ui:VisualElement>
+                <ui:VisualElement name="NodeContainerThree" class="justify-center align-items-center node-container">
+                    <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                        <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="LabelContainer">
+                        <ui:Label tabindex="-1" text="Vitals Check" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="StepContainerThree" class="grow">
+                    <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                </ui:VisualElement>
+                <ui:VisualElement name="NodeContainerFour" class="justify-center align-items-center node-container">
+                    <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                        <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="LabelContainer">
+                        <ui:Label tabindex="-1" text="Sputum Collection" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="StepContainerFour" class="grow">
+                    <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                </ui:VisualElement>
+                <ui:VisualElement name="NodeContainerFive" class="justify-center align-items-center node-container">
+                    <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                        <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="LabelContainer">
+                        <ui:Label tabindex="-1" text="Post Op." parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="StepContainerFive">
+                    <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <engine:VisualElement name="Table" class="table mt-32 mb-8 mr-32 ml-32">
+            <engine:VisualElement name="Header" class="flex-row w-100 justify-space-around table-header align-items-center">
+                <engine:Label text="MY TASKS" class="w-100 fs-24 bold pl-32" />
+            </engine:VisualElement>
+            <engine:VisualElement name="HeaderBottom" class="table-header-bottom" />
+            <engine:ScrollView name="CategoryHolder" horizontal-scroller-visibility="AlwaysVisible" vertical-scroller-visibility="AlwaysVisible" elasticity="0" class="scrollbar category-holder" />
+            <engine:VisualElement name="Footer" class="flex-row w-100 justify-space-around align-items-center table-footer" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

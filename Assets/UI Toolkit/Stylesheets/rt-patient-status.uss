@@ -1,0 +1,28 @@
+.status-window{
+    background-color: var(--status-background-colour);
+    
+    min-width: 250px;
+    min-height: 200px;
+    max-width: 450px;
+    max-height: 600px;
+    
+    margin-top: 400px;
+    margin-left: 30px;
+}
+
+.status-header-height{
+    height: 65px;
+}
+
+.status-bar{
+    width: 5px;
+    background-color: var(--status-bar-colour);
+}
+
+.status-header-text{
+    color: var(--status-window-title-text-colour);
+}
+
+.status-description-text{
+    color: var(--status-window-description-text-colour);
+}

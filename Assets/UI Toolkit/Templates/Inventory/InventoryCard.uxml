@@ -1,0 +1,20 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-card.uss?fileID=7433441132597879392&amp;guid=fabc9f5bdad1d9246a028b46ef9896e8&amp;type=3#velcro-card" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-cards.uss?fileID=7433441132597879392&amp;guid=0d52deaa00d97c34db1976dadda546b9&amp;type=3#rt-cards" />
+    <engine:VisualElement name="CardContainer" class="card-container bw-0">
+        <VARLab.Velcro.BoxShadowManager name="CardShadow" blur-width="4" offset-y="4" inner-shadow-variable="--card-v4-container-inner-shadow" outer-shadow-variable="--card-v4-container-outer-shadow" class="grow card-v4-shadow-variables br-20">
+            <engine:VisualElement name="Card" class="card">
+                <engine:VisualElement name="Background" class="grow absolute h-100 w-100 br-20 card-background" />
+                <engine:VisualElement name="Top" class="br-tl-20 br-tr-20 align-items-center justify-center p-20 bw-b-0 bw-l-4 bw-t-4 bw-r-4 card-top grow">
+                    <engine:VisualElement name="Checkmark" class="absolute card-top-checkmark" />
+                    <engine:VisualElement name="ExplorableImage" class="card-top-image" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Bottom" class="br-bl-20 br-br-20 align-items-center bw-t-0 bw-l-4 bw-r-4 bw-b-4 card-bottom">
+                    <engine:Label tabindex="-1" text="[Label]" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CardText" class="p-0 m-0 fw-700 text-wrap text-align-middle-center card-label mr-20 ml-20 mb-20" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </VARLab.Velcro.BoxShadowManager>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,171 @@
+.inventory-panel {
+    width: 1786px;
+    height: 1050px;
+    background-color: var(--inventory-background-colour);
+}
+
+.button-category-container {
+    width: 1540px;
+    height: 78px;
+    margin-top: 10px;
+}
+
+.button-category {
+    width: 33%;
+}
+
+/* Focus style set to match selected style so default blue bar disappears */
+.button-category:focus:enabled {
+    background-color: var(--inventory-btn-category-colour);
+    border-color: var(--inventory-btn-category-border-colour);
+    color: var(--inventory-btn-category-label-colour);
+    border-bottom-width: 2px;
+}
+/* Focus style set to match selected style so default blue bar disappears */
+.button-category-select:focus:enabled {
+    border-color: var(--inventory-btn-category-border-colour-active);
+    color: var(--inventory-btn-category-label-colour-active);
+    border-bottom-width: 9px;
+    width: 33%;
+
+}
+
+/* Focus style set to match selected style and override base hover styles */
+.button-category:hover:focus:enabled {
+    background-color: var(--inventory-btn-category-colour-hover);
+    border-color: var(--inventory-btn-category-border-colour-hover);
+    color: var(--inventory-btn-category-label-colour-hover);
+
+}
+
+.button-category-unselected {
+    background-color: var(--inventory-btn-category-colour);
+    border-color: var(--inventory-btn-category-border-colour);
+    color: var(--inventory-btn-category-label-colour);
+    border-bottom-width: 2px;
+}
+
+.button-category-unselected:hover:enabled {
+    background-color: var(--inventory-btn-category-colour-hover);
+    border-color: var(--inventory-btn-category-border-colour-hover);
+    color: var(--inventory-btn-category-label-colour-hover);
+}
+
+.button-category-selected: {
+    width: 33%;
+    background-color: var(--inventory-btn-category-colour);
+    border-color: var(--inventory-btn-category-border-colour-active);
+    color: var(--inventory-btn-category-label-colour-active);
+    -unity-font-style: bold;
+    border-bottom-width: 9px;
+}
+
+/* Focus style set to match selected style and override base hover styles */
+.button-category-selected:focus:enabled {
+    width: 33%;
+    background-color: var(--inventory-btn-category-colour);
+    border-color: var(--inventory-btn-category-border-colour-active);
+    color: var(--inventory-btn-category-label-colour-active);
+    -unity-font-style: bold;
+    border-bottom-width: 9px;
+}
+
+.button-category-selected:hover:enabled {
+    background-color: var(--inventory-btn-category-colour-hover);
+    border-color: var(--inventory-btn-category-border-colour-active);
+    color: var(--inventory-btn-category-label-colour-active);
+}
+
+.inventory-content-bar {
+    width: 1786px;
+    min-height: 95px;
+}
+
+.inventory-content-bar-left {
+    background-color: var(--inventory-contentbar-left-background-colour);
+    width: 357px;
+    height: 100px;
+    margin-right: 2px;
+}
+
+.inventory-content-bar-right {
+    background-color: var(--inventory-contentbar-right-background-colour);
+    width: 1427px;
+    height: 100px;
+}
+
+.inventory-content-bar-image-cart {
+    background-image: var(--inventory-contentbar-image-cart);
+    width: 66px;
+    height: 81px;
+}
+
+.inventory-content-bar-text-container {
+    margin-left: 70px;
+}
+
+.inventory-content-bar-label-content {
+    color: var(--inventory-contentbar-label-contents);
+}
+
+.inventory-content-bar-label-total {
+    color: var(--inventory-contentbar-label-total);
+}
+
+.progress-bar {
+    width: 451px;
+    height: 12px;
+    margin-left: 68px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.unity-progress-bar__progress {
+    background-color: var(--inventory-progress-bar-background-colour-progress);
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.unity-progress-bar__background {
+    background-color: var(--inventory-progress-bar-background-colour);
+    border-width: 0px;
+}
+
+.inventory-panelcontainer-label-info {
+    color: var(--inventory-panelcontainer-label-info);
+    margin-left: 94px;
+}
+
+.inventory-panelcontainer-label-amount {
+    color: var(--inventory-panelcontainer-label-amount);
+    margin-left: auto;
+    margin-right: 93px;
+}
+
+.header-start-size {
+    width: 535px;
+    height: 88px;
+}
+
+/* This inventory scroll view is a disaster. Only edit if you are brave */
+.inventory-scrollview {
+    margin-right: 80px;
+    margin-left: 80px;
+    min-width: 1600px;
+    max-width: 1600px;
+    max-height: 640px;
+}
+
+.inventory-scrollview-container {
+    flex-wrap: wrap;
+}
+
+.unity-scroll-view__content-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inventory-btn-close {
+    top: 40px;
+    right: 25px;
+}

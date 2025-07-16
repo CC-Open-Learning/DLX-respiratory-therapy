@@ -1,0 +1,102 @@
+.scenario-image {
+    background-image: var(--scenerio-image);
+    width: 160px;
+    height: 160px;
+    bottom: 40px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pl-70 {
+    padding-left: 70px;
+}
+
+.scenario-size {
+    min-width: 1525px;
+    min-height: 733px;
+    background-color: var(--inventory-background-colour);
+}
+.background-color-button{
+    background-color: var(--inventory-background-colour);
+}
+
+
+/* Button hover style */
+.background-hover:hover {
+    background-color: var(--scenario-btn-category-border-colour-hover); 
+}
+
+/* Button click style */
+.background-click:active {
+    background-color: var(--scenario-btn-category-border-colour-active); 
+}
+
+.height-125 {
+    height: 125px;
+}
+
+.scenario-container
+ { 
+    padding-left: 14px; 
+    padding-right: 14px; 
+    padding-bottom: 74px; 
+}
+
+.header-size {
+    width: 533px;
+}
+
+.scenario-width-card {
+    width: 349px;
+    height: 345px;
+}
+
+.scenario-card-progress {
+    width: 180px;
+    height: 45px;
+    min-width: 180px;
+    min-height: 45px;
+}
+
+.card-top-color {
+    background-color: var(--card-v1-background-colour);
+}
+
+.scenario-canvas {
+     background-color: var(--canvas-dim-colour);
+}
+
+.scenario-label-menu{
+    color:var(--scenario-label-color);
+    margin-left: 17px;
+}
+
+.scenario-label-patient{
+    color:var(--scenario-label-color);
+}
+
+.scenario-label-description{
+    color:var(--scenario-label-color);
+}
+
+.scenario-menu-back{
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.scenario-menu-icon{
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.scenario-menu-back-icon{
+    background-image: var(--scenerio-menu-back-image);
+}
+
+.scenario-patient-image-text{
+    flex-direction: row;
+    width: 282px;
+    height: 153px;
+}

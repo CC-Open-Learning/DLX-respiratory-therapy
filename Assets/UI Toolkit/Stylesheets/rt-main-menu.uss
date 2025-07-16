@@ -1,0 +1,9 @@
+.mm-background{
+	background-image: var(--mm-background-image);
+}
+
+
+.mm-canvas {
+	background-image:none;
+	background-color: var(--mm-background-colour);
+}

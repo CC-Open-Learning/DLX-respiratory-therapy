@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-notifications.uss?fileID=7433441132597879392&amp;guid=042fe9da42942e442bbff16de1d09dc8&amp;type=3#velcro-notifications" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-notification.uss?fileID=7433441132597879392&amp;guid=f276b79e598ec874f819e726c23334fa&amp;type=3#rt-notification" />
+    <ui:VisualElement name="Container" class="align-items-center align-self-center notification flex-row absolute justify-center m-40">
+        <ui:VisualElement name="ImageContainer" class="justify-center align-items-center notifcation-circle-size notification-container-icon">
+            <ui:VisualElement name="Image" class="notification-icon-dimensions notification-success-image" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LabelContainer" class="mt-16 mb-16 notification-label-container">
+            <ui:Label tabindex="-1" text="[Text]&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MessageLabel" class="fw-700 text-wrap m-0 p-0 fs-24" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

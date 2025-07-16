@@ -1,0 +1,39 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Button-Listen-Small" src="project://database/Assets/VELCRO%20UI/Templates/Button%20Listen/Button-Listen-Small.uxml?fileID=9197481963319205126&amp;guid=896b8e6710c6cf7499898030c6e541d8&amp;type=3#Button-Listen-Small" />
+    <engine:Template name="Button-Close" src="project://database/Assets/VELCRO%20UI/Templates/Button%20Close/Button-Close.uxml?fileID=9197481963319205126&amp;guid=342fc01b0760e2e4bbf6fd7de859fd99&amp;type=3#Button-Close" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-object-viewer.uss?fileID=7433441132597879392&amp;guid=4434f5011bc680f44858bc09b9328997&amp;type=3#rt-object-viewer" />
+    <engine:VisualElement name="Canvas" class="align-items-center grow objectviewer-canvas justify-center w-100">
+        <engine:VisualElement name="ViewExplorableContainer" class="align-self-center flex-row br-20 bw-1 objectviewer">
+            <engine:VisualElement name="3DObjectContainer" class="object-container flex-column hide-overflow h-100 w-55">
+                <Kamgam.UIToolkitWorldImage.WorldImage renderer-id="main" name="WorldImage" class="align-self-center h-100 objectviewer-world-image" />
+                <engine:VisualElement name="AffordanceContainer" class="flex-row objectviewer-affordance-container">
+                    <engine:VisualElement name="RotateContainer" class="m-32 flex-row">
+                        <engine:VisualElement name="rotate" class="mr-4 objectviewer-image-rotate objectviewer-image" />
+                        <engine:Label text="Click to Rotate&#10;" name="RotateLabel" class="objectviewer-label-rotate fs-24 fw-400" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="ZoomContainer" class="m-32 flex-row">
+                        <engine:VisualElement name="zoom" class="mr-4 objectviewer-image-zoom objectviewer-image" />
+                        <engine:Label text="Scroll to Zoom" name="ZoomLabel" class="objectviewer-label-zoom fs-24 fw-400" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="InformationContainer" class="ml-4 h-100 w-45">
+                <engine:VisualElement name="InformationComponentContainer" class="grow objectviewer-container-information">
+                    <engine:VisualElement name="AudioButtonContainer">
+                        <engine:Instance template="Button-Listen-Small" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="NameLabelContainer" class="mt-40 mr-40 mb-40">
+                        <engine:Label text="[Name]" name="ExplorableNameLabel" class="fs-28 text-wrap p-0 fw-700 objectviewer-label-name m-0" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DescriptionLabelContainer" class="grow mr-40">
+                        <engine:Label text="[Description]" name="ExplorableDescriptionLabel" class="text-wrap p-0 fw-400 objectviewer-label-description m-0" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:Instance template="Button-Close" class="absolute objectviewer-btn-close" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

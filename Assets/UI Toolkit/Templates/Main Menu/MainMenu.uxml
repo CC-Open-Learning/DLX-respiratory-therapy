@@ -1,0 +1,39 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Button-Menu-Primary" src="project://database/Assets/VELCRO%20UI/UI/Main%20Menus/Button-Menu-Primary.uxml?fileID=9197481963319205126&amp;guid=2210fe1ed1c37dc42a053bd015162d3a&amp;type=3#Button-Menu-Primary" />
+    <engine:Template name="Button-Menu-Secondary" src="project://database/Assets/VELCRO%20UI/UI/Main%20Menus/Button-Menu-Secondary.uxml?fileID=9197481963319205126&amp;guid=43c494cd13d5b0f4eafa81541cb7e747&amp;type=3#Button-Menu-Secondary" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-main-menu.uss?fileID=7433441132597879392&amp;guid=fe188f2160cd02f489bd41e46d0269b1&amp;type=3#rt-main-menu" />
+    <engine:VisualElement name="MainMenuBackground" class="grow w-100 align-items-center justify-center menu-large-canvas mm-background">
+        <engine:VisualElement name="Canvas" class="grow w-100 align-items-center justify-center menu-large-canvas mm-canvas" style="background-color: rgba(60, 60, 60, 0.35);">
+            <engine:VisualElement name="TitleContainer" class="menu-large-title-container">
+                <engine:VisualElement name="Title">
+                    <engine:VisualElement name="Top" class="menu-large-title-top" />
+                    <engine:VisualElement name="Bottom" class="menu-large-title-bottom absolute" />
+                    <engine:Label tabindex="-1" text="Respiratory Therapy" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleLabel" class="p-0 m-0 fw-700 absolute menu-large-label-title ml-8" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Bar" class="mt-8 menu-large-title-bar" />
+            </engine:VisualElement>
+            <engine:VisualElement name="ButonContainer" class="grow justify-center align-items-center">
+                <engine:Instance template="Button-Menu-Primary" name="Button-Level-Select" class="m-20">
+                    <AttributeOverrides element-name="ButtonMenuPrimary" text="Level select" />
+                </engine:Instance>
+                <engine:Instance template="Button-Menu-Primary" name="Button-Continue" class="m-20">
+                    <AttributeOverrides element-name="ButtonMenuPrimary" text="Continue" />
+                </engine:Instance>
+                <engine:Instance template="Button-Menu-Secondary" name="Button-Restart" class="m-20">
+                    <AttributeOverrides element-name="ButtonMenuSecondary" text="Restart" />
+                </engine:Instance>
+                <engine:Instance template="Button-Menu-Secondary" name="Button-BackTo-Level-Select" class="m-20">
+                    <AttributeOverrides element-name="ButtonMenuSecondary" text="Level selection " />
+                </engine:Instance>
+                <engine:Instance template="Button-Menu-Secondary" name="Button-Settings" class="m-20">
+                    <AttributeOverrides element-name="ButtonMenuSecondary" text="Settings" />
+                </engine:Instance>
+            </engine:VisualElement>
+            <engine:VisualElement name="Footer" class="w-100 menu-large-footer justify-center align-items-center flex-row">
+                <engine:VisualElement name="Logo" class="menu-large-footer-logo" />
+                <engine:VisualElement name="Bar" class="menu-large-footer-bar mt-16 mb-16 mr-20" />
+                <engine:Label tabindex="-1" text="CENTRE FOR VIRTUAL&#10;REALITY INNOVATION" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OrganizationLabel" class="p-0 m-0 menu-large-label-organization fw-400 fs-16" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

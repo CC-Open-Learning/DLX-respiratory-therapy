@@ -1,0 +1,32 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Common/MessageDisplayPanelUSS.uss?fileID=7433441132597879392&amp;guid=474ff4be8101d654d82c18e114206cd0&amp;type=3#MessageDisplayPanelUSS" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <engine:VisualElement name="Canvas" class="grow align-items-center justify-center ws-background-dim">
+        <engine:VisualElement name="Window" class="br-20 window-single ws-size" style="width: 985px;">
+            <engine:VisualElement name="ContentImage" class="ws-content-image absolute align-items-end align-self-end" />
+            <ui:VisualElement xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" name="Header" template="Header">
+                <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+                <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+                <ui:VisualElement name="Header" class="flex-row w-100">
+                    <ui:VisualElement name="HeaderEnd" class="absolute w-100 header-end br-tl-20 br-tr-20" />
+                    <ui:VisualElement name="HeaderStart" class="header-start">
+                        <ui:Label tabindex="-1" text="Welcome" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="fw-700 fs-36 m-0 p-0 grow text-align-middle-left pl-20 header-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <engine:VisualElement name="Content" class="flex-row ml-48 mt-20">
+                <engine:VisualElement name="Image" class="welcome-screen-image-size mt-32" />
+                <engine:VisualElement name="ContentText" class="grow ws-content-text-container ml-8">
+                    <engine:Label text="Welcome to Conestoga General Hospital!" name="Title" class="fs-36 text-wrap fw-700 ws-header-text" />
+                    <engine:Label text="I&apos;m Kris Lee. I&apos;ve been a respiratory therapist here for 15 years, &#10;and I&apos;m excited to be your preceptor while you&apos;re here on clinical placement. &#10;My role is to provide support throughout your experiences here. &#10;&#10;Let&apos;s start by heading up to the bronchoscopy suite!" name="Message" class="fs-24 text-wrap mt-12 ws-message-text" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="Footer" class="align-self-center grow ws-footer">
+                <engine:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BeginButton" class="button-primary button button-medium ws-button" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

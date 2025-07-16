@@ -1,0 +1,64 @@
+.card-container {
+    margin-right: 40px;
+    margin-bottom: 40px;
+    width: 270px;
+    height: 270px;
+}
+
+.card {
+    width: 260px;
+    height: 260px;
+}
+
+.card-background {
+    background-color: var(--card-background-colour);
+}
+
+.card-background:hover:enabled {
+    background-color: var(--card-background-colour-hover);
+}
+
+/* Targets the top child element when the card is hovered */
+.card:hover:enabled > #Top {
+    background-color: var(--card-background-colour-hover);
+    border-color: var(--card-border-colour-hover);
+}
+
+/* Targets the bottom child element when the card is hovered */
+.card:hover:enabled > #Bottom {
+    background-color: var(--card-background-colour-hover);
+    border-color: var(--card-border-colour-hover);
+}
+
+.card-top {
+    background-color: var(--card-background-colour);
+    border-color: var(--card-border-colour);
+}
+
+.card-bottom {
+    background-color: var(--card-background-colour);
+    border-color: var(--card-border-colour);
+}
+
+.card-label {
+    color: var(--card-label-colour);
+    font-size: 18px;
+}
+
+.card-top-image {
+    min-width: 145px;
+    min-height: 145px;
+    background-image: var(--card-image-placeholder);
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: var(--card-image-tint-colour);
+}
+
+.card-top-checkmark {
+    background-image: var(--card-image-checkmark);
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 32px;
+    min-height: 32px;
+    visibility: hidden;
+    top: 20px;
+    right: 20px;
+}

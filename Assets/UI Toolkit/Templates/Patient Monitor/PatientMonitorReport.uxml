@@ -1,0 +1,40 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-patient-monitor.uss?fileID=7433441132597879392&amp;guid=3f1f1eccfb4b72140ba736c887a4f6a9&amp;type=3#rt-patient-monitor" />
+    <engine:VisualElement name="Container" picking-mode="Ignore" class="grow align-items-end justify-center patient-monitor-container">
+        <engine:VisualElement name="PatientMonitorReport" class="patient-monitor br-20 align-items-center">
+            <engine:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" class="button-secondary-2 button align-items-center button-small-icon flex-row justify-center patient-monitor-back-button pl-0 pr-0 mt-24 mb-28" style="padding-bottom: 12px; padding-right: 0; padding-left: 0; margin-top: 24px; margin-bottom: 28px;">
+                <engine:VisualElement name="Icon" class="button-secondary-2-icon button-icon-sprite patient-monitor-back-button-icon" />
+                <engine:VisualElement name="LabelContainer">
+                    <engine:Label tabindex="-1" text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ButtonLabel" class="ml-8 m-0 p-0" />
+                </engine:VisualElement>
+            </engine:Button>
+            <engine:Label text="Select the&#10;vitals to report." name="PatientMonitorReportLabel" class="fw-400 fs-24 text-wrap p-0 ml-0 mr-0 patient-monitor-report-label" />
+            <engine:VisualElement name="ChecklistContainer" class="align-items-start">
+                <engine:VisualElement name="ECGContainer" class="flex-row align-items-center mb-16">
+                    <engine:Toggle name="ECGCheckbox" focusable="false" class="checkbox patient-monitor-checkbox" />
+                    <engine:Label text="ECG" name="ECGLabel" class="patient-monitor-checklist-label fw-700 fs-20 m-0 p-0 ml-8" />
+                </engine:VisualElement>
+                <engine:VisualElement name="RESPContainer" class="flex-row align-items-center mb-16">
+                    <engine:Toggle name="RESPCheckbox" focusable="false" class="checkbox patient-monitor-checkbox" />
+                    <engine:Label text="RESP" name="RESPLabel" class="patient-monitor-checklist-label fw-700 fs-20 m-0 p-0 ml-8" />
+                </engine:VisualElement>
+                <engine:VisualElement name="SpO2Container" class="flex-row align-items-center mb-16">
+                    <engine:Toggle name="SpO2Checkbox" focusable="false" class="checkbox patient-monitor-checkbox" />
+                    <engine:Label text="SpO2" name="SpO2Label" class="patient-monitor-checklist-label fw-700 fs-20 m-0 p-0 ml-8" />
+                </engine:VisualElement>
+                <engine:VisualElement name="CO2Container" class="flex-row align-items-center mb-16">
+                    <engine:Toggle name="CO2Checkbox" focusable="false" class="checkbox patient-monitor-checkbox" style="background-image: none; -unity-background-scale-mode: stretch-to-fill;" />
+                    <engine:Label text="CO2" name="CO2Label" class="patient-monitor-checklist-label fw-700 fs-20 m-0 p-0 ml-8" />
+                </engine:VisualElement>
+                <engine:VisualElement name="NIBPContainer" class="flex-row align-items-center">
+                    <engine:Toggle name="NIBPCheckbox" focusable="false" class="checkbox patient-monitor-checkbox" />
+                    <engine:Label text="NIBP" name="NIBPLabel" class="patient-monitor-checklist-label fw-700 fs-20 m-0 p-0 ml-8" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:Button text="Report Vitals" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ReportButton" class="button-primary button button-small patient-monitor-report-button" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

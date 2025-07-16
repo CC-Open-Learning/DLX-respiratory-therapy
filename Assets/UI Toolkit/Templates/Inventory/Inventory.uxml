@@ -1,0 +1,54 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Button-Close" src="project://database/Assets/VELCRO%20UI/Templates/Button%20Close/Button-Close.uxml?fileID=9197481963319205126&amp;guid=342fc01b0760e2e4bbf6fd7de859fd99&amp;type=3#Button-Close" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-inventory.uss?fileID=7433441132597879392&amp;guid=aa3c867bd78e4e64fbc006377b8c58cb&amp;type=3#rt-inventory" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-cards.uss?fileID=7433441132597879392&amp;guid=0d52deaa00d97c34db1976dadda546b9&amp;type=3#rt-cards" />
+    <engine:VisualElement name="Screen" class="align-items-center justify-start flex-row grow align-self-auto shrink align-self-center">
+        <engine:VisualElement name="InventoryPanel" class="inventoryPanel align-self-center br-20 inventory-panel">
+            <ui:VisualElement xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" name="HeaderContainer" template="Header">
+                <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+                <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+                <ui:VisualElement name="Header" class="flex-row w-100">
+                    <ui:VisualElement name="HeaderEnd" class="absolute w-100 header-end br-tl-20 br-tr-20" />
+                    <ui:VisualElement name="HeaderStart" class="header-start header-start-size">
+                        <ui:Label tabindex="-1" text="Cart Contents" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="fw-700 m-0 p-0 grow text-align-middle-left pl-20 header-label fs-40" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Instance template="Button-Close" class="absolute inventory-btn-close" />
+            </ui:VisualElement>
+            <engine:VisualElement name="Content" class="grow">
+                <engine:VisualElement name="ContentBar" class="flex-row inventory-content-bar mt-20">
+                    <engine:VisualElement name="LeftSide" class="inventory-content-bar-left justify-center align-items-center">
+                        <engine:VisualElement name="CartImage" class="inventory-content-bar-image-cart" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="RightSide" class="inventory-content-bar-right">
+                        <engine:VisualElement name="RightSideContainer">
+                            <engine:VisualElement name="ContentBarTextContainer" class="flex-row fs-28 fw-700 inventory-content-bar-text-container mb-8 mt-16">
+                                <engine:Label text="Cart Contents" name="CartContentsText" class="inventory-content-bar-label-content p-0 m-0 mt-8" />
+                                <engine:Label text="(0/25 found)" name="TotalFoundText" class="inventory-content-bar-label-total p-0 m-0 mt-8 ml-8" />
+                            </engine:VisualElement>
+                            <engine:ProgressBar name="ProgressBar" high-value="25" value="0" class="progress-bar" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="TabsContainer">
+                    <engine:VisualElement name="Tabs" class="fs-24 button-category-container flex-row align-self-center justify-center">
+                        <engine:Button text="Medications" double-click-selects-word="false" name="CategoryMedications" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/Medications.asset?fileID=11400000&amp;guid=0677695235669b640ab3e6b13f695703&amp;type=2#Medications" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                        <engine:Button text="General Supplies" name="CategoryGenSupplies" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/GenSupplies.asset?fileID=11400000&amp;guid=75c958e617a15104882ab7cc69d44179&amp;type=2#GenSupplies" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                        <engine:Button text="Bronchoscopy Supplies" name="CategoryBronchSupplies" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/BronchSupplies.asset?fileID=11400000&amp;guid=6fd2c34e70ea57f44a7566109541574d&amp;type=2#BronchSupplies" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="InventoryPanelTextContainer" class="flex-row mt-20 mb-20">
+                    <engine:Label text="Click any one for more information" name="InventoryPanelInfo" class="fs-28 inventory-panelcontainer-label-info fw-400" />
+                    <engine:Label text="0 Supplies" name="InventoryAmountOf" class="fs-24 inventory-panelcontainer-label-amount bold" />
+                </engine:VisualElement>
+                <engine:ScrollView mode="Vertical" name="ScrollView" class="scrollbar inventory-scrollview align-items-start grow align-self-center mb-16">
+                    <engine:VisualElement name="ScrollviewContent" class="flex-row inventory-scrollview-container" />
+                </engine:ScrollView>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

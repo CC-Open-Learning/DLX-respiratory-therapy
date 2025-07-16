@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Flex Tube
+  m_EditorClassIdentifier: 
+  ExplorableName: Flex Tube
+  ExplorableDescription: The flex tube connects the manual resuscitator with the
+    DAR connector. It allows intubated, ventilator-dependent patients to be supported
+    during the procedure. It is connected where the mask is usually attached to the
+    valve assembly.
+  ExplorableSprite: {fileID: 21300000, guid: 4f759f36b18777d4da6537631541c6e0, type: 3}
+  ExplorableCategory: 2
+  PoiType: 11
+  ExplorableAudioClip: {fileID: 8300000, guid: 82a77ff0b2b404946ac7e3b85a15a89e, type: 3}

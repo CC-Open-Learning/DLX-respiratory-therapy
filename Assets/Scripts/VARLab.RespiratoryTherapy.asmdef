@@ -1,0 +1,28 @@
+{
+    "name": "VARLab.RespiratoryTherapy",
+    "rootNamespace": "VARLab.RespiratoryTherapy",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:e0cdf70e0672612409d1b39552e7a2a4",
+        "GUID:4307f53044263cf4b835bd812fc161a4",
+        "GUID:e0cdf70e0672612409d1c39552e7a2a1",
+        "GUID:4d2d7efd29676a8439ff643055fc6dd5",
+        "GUID:b765bae2a3178a34f927142c0c837f78",
+        "GUID:779c215ae3fac6047b1863f8291dd770",
+        "GUID:0da6d172d18a54e4389d0dce1e1ffdf2",
+        "GUID:bc9a83a378501ce4fb02f66dca3a81bc",
+        "GUID:8344be0049bdb914a8b25ff80fec5adf",
+        "GUID:fcced1498d070e94cb1e442cd52820a4",
+        "GUID:1d0983e8e0dfb6a48b2a8d30f7a4262c",
+        "GUID:f47ac68f41b878841a3302983ec483bd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

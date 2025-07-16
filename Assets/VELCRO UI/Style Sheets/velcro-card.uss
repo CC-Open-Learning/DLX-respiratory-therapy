@@ -1,0 +1,510 @@
+/* ===============================================
+Card style 1 classes
+=============================================== */  
+.card-v1-container {
+    height: 328px;
+    background-color: var(--card-button-element-background-color);
+}
+
+/* Pseudo state modifiers (hover, disabled) */
+.card-v1-container:hover:enabled { /* Pseudo class for hovering over card */
+    background-color: var(--card-button-element-background-color);
+}
+
+.card-v1-container:hover:enabled > #CardShadow > #Card > #Top {
+    background-color: var(--card-v1-top-hover-clicked-color);
+}
+
+.card-v1-container:hover:enabled > #CardShadow > #Card > #Body {
+    background-color: var(--card-v1-bottom-hover-clicked-color);
+}
+
+.card-v1-container:disabled { /* Card is Disabled/Inactive */
+    background-color: var(--card-button-element-background-color);
+}
+
+.card-v1-container:disabled > #CardShadow > #Card > #Top {
+    background-color: var(--card-v1-top-disabled-color);
+}
+
+.card-v1-container:disabled > #CardShadow > #Card > #Body {
+    background-color: var(--card-disabled-background-color);
+}
+
+.card-v1-container:disabled > #CardShadow > #Card > #Body > #PrimaryText {
+    color: var(--card-disabled-text-icon-color);
+}
+
+/* Clicked class for container with child element modifiers */
+.card-v1-container-clicked:active:enabled > #CardShadow > #Card > * {
+    border-color: var(--card-clicked-border-color);
+}
+
+.card-v1-container-clicked:active:enabled > #CardShadow > #Card > #Top { /* Class specific to when card is clicked/selected, should be applied to card container in conjunction with card-v1-container class */
+    background-color: var(--card-v1-top-hover-clicked-color);
+    
+}
+
+.card-v1-container-clicked:active:enabled > #CardShadow > #Card > #Seperator {
+    border-color: var(--card-clicked-border-color);
+}
+
+.card-v1-container-clicked:active:enabled > #CardShadow > #Card > #Body {
+    background-color: var(--card-v1-bottom-hover-clicked-color);
+    border-color: var(--card-clicked-border-color);
+}
+
+.card-v1-container-default { /* Create variant of card v1 without image when used in conjunction with base container class */
+    width: 328px;
+    --card-v1-icon-display: none;
+}
+
+.card-v1-container-image { /* Create variant of card v1 with image when used in conjunction with base container class */
+    width: 480px;
+    --card-v1-icon-display: flex;
+}
+
+/* Child element modifiers for parts of card */
+.card-v1-seperator {
+    height: 2px;
+    background-color: var(--card-v1-imagebox-border-colour);
+    border-color: var(--card-v1-imagebox-border-colour);
+}
+
+.card-v1-top {
+    height: 106px;
+    background-color: var(--card-v1-image-box-background-colour);
+}
+
+.card-v1-icon { /* Displays default image. Change image variable, size and tint for custom image. */
+    display: var(--card-v1-icon-display);
+    width: 74px;
+    height: 74px;
+    background-image: var(--card-default-image);
+}
+
+.card-v1-bottom {
+    background-color: var(--card-v1-background-colour);
+}
+
+.card-v1-text {
+    color: var(--card-v1-text-colour);
+}
+
+.card-v1-shadow-variables {
+    --card-v1-inner-shadow: var(--card-v2-inner-shadow-colour);
+    --card-v1-outer-shadow: var(--card-v2-outer-shadow-colour);
+}
+
+
+
+/* ===============================================
+Card style 2 classes
+=============================================== */  
+.card-v2-container {
+    width: 250px;
+    height: 211px;
+    background-color: var(--card-button-element-background-color); /* Removes button background that gets automatically applied */
+}
+
+/* Pseudo state modifiers (hover, disabled) */
+.card-v2-container:hover:enabled { 
+    background-color: var(--card-button-element-background-color);
+}
+
+.card-v2-container:hover:enabled > #CardShadow > #Card > * {
+    background-color: var(--card-v2-hover-clicked-background-color);
+}
+
+.card-v2-container:hover:enabled > #CardShadow > #Card > #Seperator {
+    background-color: var(--card-v2-top-colour);
+}
+
+.card-v2-container:disabled {
+    background-color: var(--card-button-element-background-color);
+}
+
+.card-v2-container:disabled > #CardShadow > #Card > * {
+    background-color: var(--card-disabled-background-color);
+}
+
+.card-v2-container:disabled > #CardShadow > #Card > #Seperator {
+    background-color: var(--card-v2-top-colour);
+}
+
+.card-v2-container:disabled > #CardShadow > #Card > #Middle > * {
+    color: var(--card-disabled-text-icon-color);
+}
+
+.card-v2-container:disabled > #CardShadow > #Card > #Bottom > * {
+    color: var(--card-disabled-text-icon-color);
+    -unity-background-image-tint-color: var(--card-disabled-text-icon-color); /* To match unity icon change for disabled state. Can be changed/removed later, or left in to affect custom icon */
+}
+
+/* Clicked class for container with child element modifiers */
+.card-v2-container-clicked:active:enabled > #CardShadow > #Card > * {
+    background-color: var(--card-v2-hover-clicked-background-color);
+    border-color: var(--card-clicked-border-color);
+}
+
+.card-v2-container-clicked:active:enabled > #CardShadow > #Card > #Seperator {
+    background-color: var(--card-v2-top-colour);
+}
+
+.card-v2-container-default { /* Create variant of card v2 in progress/not yet started when used in conjunction with base container class */
+    --card-v2-top-colour: var(--card-v2-top-default-colour);
+    --card-v2-bottom-colour: var(--card-v2-bottom-default-colour);
+    --card-v2-top-icon-visibility: hidden;
+    --card-v2-bottom-label-font: var(--font-regular);
+}
+
+.card-v2-container-complete { /* Create variant of card v2 showing completed state when used in conjunction with base container class */
+    --card-v2-top-colour: var(--card-v2-top-completed-colour);
+    --card-v2-bottom-colour: var(--card-v2-bottom-completed-colour);
+    --card-v2-top-icon-visibility: visible;
+    --card-v2-bottom-label-font: var(--font-bold-italic);
+}
+
+/* Child element modifiers for parts of card */
+.card-v2-top {
+    background-color: var(--card-v2-background-colour);
+    height: 61px;
+}
+
+.card-v2-top-label {
+    color: var(--card-v2-top-colour);
+}
+
+.card-v2-top-icon {
+    width: 28px;
+    height: 26px;
+    visibility: var(--card-v2-top-icon-visibility);
+    background-image: var(--card-v2-checkmark-image-sprite);
+    -unity-background-image-tint-color: var(--card-v2-top-completed-colour);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.card-v2-seperator {
+    height: 2px;
+    background-color: var(--card-v2-top-colour);
+}
+
+.card-v2-middle {
+    background-color: var(--card-v2-background-colour);
+}
+
+.card-v2-body-label {
+    color: var(--card-v2-body-text-colour);
+}
+
+.card-v2-bottom {
+    background-color: var(--card-v2-background-colour);
+    height: 44px;
+}
+
+.card-v2-bottom-label {
+    color: var(--card-v2-bottom-colour);
+    -unity-font-definition: var(--card-v2-bottom-label-font);
+}
+
+.card-v2-bottom-icon { /* Displays default image. Change image variable, size and tint for custom image. */
+    margin-top: 2px;
+    width: 17px;
+    height: 20px;
+    background-image: var(--card-v2-timer-image-sprite);
+    -unity-background-image-tint-color: var(--card-v2-bottom-default-colour);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.card-v2-shadow-variables {
+    --card-v2-inner-shadow: var(--card-v2-inner-shadow-colour);
+    --card-v2-outer-shadow: var(--card-v2-outer-shadow-colour);
+}
+
+
+
+/* ===============================================
+Card style 3 classes
+=============================================== */  
+.card-v3-container {
+    width: 300px;
+    height: 345px;
+    background-color: var(--card-button-element-background-color);
+}
+
+.card-v3-container > #Shadow > #Card {
+    border-color: var(--card-button-element-background-color);
+}
+
+/* Pseudo state modifiers (hover, disabled) */
+.card-v3-container:hover:enabled {
+    background-color: var(--card-button-element-background-color);
+}
+
+.card-v3-container:hover:enabled > #Shadow > #Card > #ImageContainer {
+    background-color: var(--card-v3-top-hover-color);
+}
+
+.card-v3-container:hover:enabled > #Shadow > #Card > #Body {
+    background-color: var(--card-v3-bottom-hover-color);
+}
+
+.card-v3-container:disabled > #Shadow > #Card > #ImageContainer {
+    background-color: var(--card-v3-disabled-top-color);
+}
+
+.card-v3-container:disabled > #Shadow > #Card > #Body {
+    background-color: var(--card-disabled-background-color);
+}
+
+.card-v3-container:disabled > #Shadow > #Card > #Body > * {
+    color: var(--card-disabled-text-icon-color);
+}
+
+/* Clicked class with child element modifiers */
+.card-v3-container-clicked:active:enabled > #Shadow > #Card > * {
+    border-color: var(--card-clicked-border-color);
+}
+
+.card-v3-container-clicked:active:enabled > #Shadow > #Card > #ImageContainer {
+    background-color: var(--card-v3-top-hover-color);
+}
+
+.card-v3-container-clicked:active:enabled > #Shadow > #Card > #Body {
+    background-color: var(--card-v3-bottom-hover-color);
+}
+
+/* Child element modifiers for parts of card */
+.card-v3-seperator {
+    height: 1px;
+    background-color: var(--card-v3-border-color);
+}
+
+.card-v3-imagebox {
+    height: 149px; /* Height lowered by 1 to accommodate for seperator acting as bottom border */
+    background-color: var(--card-v3-image-box-background-colour);
+}
+
+.card-v3-icon { /* Displays default image. Change image variable, size and tint for custom image. */
+    width: 74px;
+    height: 74px;
+    background-image: var(--card-default-image);
+}
+
+.card-v3-body {
+    background-color: var(--card-v3-background-colour);
+}
+
+.card-v3-primary-text {
+    color: var(--card-v3-main-label-colour);
+}
+
+.card-v3-secondary-text {
+    color: var(--card-v3-secondary-label-colour);
+}
+
+.card-v3-shadow-variables {
+    --card-v3-shadow-colour: var(--card-v3-drop-shadow-colour);
+    --card-v3-outer-shadow-colour: var(--card-v3-drop-shadow-outer-colour);
+}
+
+
+
+/* ===============================================
+Card style 4 classes
+=============================================== */  
+.card-v4-container {
+    background-color: var(--card-button-element-background-color);
+}
+
+/* Pseudo state modifiers (hover, disabled) */
+.card-v4-container:hover:enabled {
+    background-color: var(--card-button-element-background-color);
+}
+
+.card-v4-container:hover:enabled > #CardShadow > #Card > #Border > * {
+    background-color: var(--card-v4-hover-color);
+}
+
+.card-v4-container:disabled {
+    background-color: var(--card-button-element-background-color);
+}
+
+.card-v4-container:disabled > #CardShadow > #Card > #Border > * {
+    background-color: var(--card-disabled-background-color);
+    color: var(--card-disabled-text-icon-color);
+}
+
+/* Clicked class with child element modifiers */
+.card-v4-container-clicked:active:enabled > #CardShadow > #Card > #Border {
+    border-width: 4px; /* Overrides default border (1px) to support the Clicked state which this class enables when a user interacts with the card */
+    border-color: var(--card-clicked-border-color);
+}
+
+.card-v4-container-clicked:active:enabled > #CardShadow > #Card > #Border > #Top {
+    border-width: 0;
+    background-color: var(--card-v4-hover-color);
+}
+
+.card-v4-container-clicked:active:enabled > #CardShadow > #Card > #Border > #Bottom {
+    border-width: 0;
+    background-color: var(--card-v4-hover-color);
+}
+
+.card-v4-container-small { /* Create small variant of card v4 when used in conjunction with base container class */
+    width: 328px;
+    height: 354px;
+    --card-v4-text-size: 28px;
+    --card-v4-text-colour: var(--card-v4-small-container-text-colour);
+}
+
+.card-v4-container-large { /* Create large variant of card v4 when used in conjunction with base container class */
+    width: 425px;
+    height: 425px;
+    --card-v4-text-size: 24px;
+    --card-v4-text-colour: var(--card-v4-large-container-text-colour);
+}
+
+/* Child element modifiers for parts of card */
+.card-v4-border {
+    border-color: var(--card-v4-border-colour);
+}
+
+.card-v4-top {
+    border-color: var(--card-button-element-background-color);
+    background-color: var(--card-v4-background-colour);
+}
+
+.card-v4-bottom {
+    border-color: var(--card-button-element-background-color);
+    background-color: var(--card-v4-background-colour);
+}
+
+.card-v4-text {
+    color: var(--card-v4-text-colour);
+    font-size: var(--card-v4-text-size);
+}
+
+.card-v4-shadow-variables {
+    --card-v4-container-inner-shadow: var(--card-v4-drop-shadow-colour);
+    --card-v4-container-outer-shadow: var(--card-v4-drop-shadow-outer-colour);
+}
+
+.card-v4-image { /* Displays default image. Change image variable, size and tint for custom image. */
+    background-image: var(--card-default-image);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 145px;
+    height: 145px;
+}
+
+
+
+/* ===============================================
+Card style 5 classes
+=============================================== */  
+.card-v5-container-base {
+    width: 770px;
+    height: 760px;
+    border-color: var(--card-v5-border-colour);
+}
+
+.card-v5-container-image-only { /* Create variant of card v5 without top bar and default bottom section when used in conjunction with base container class */
+    --card-v5-top-display: none;
+    --card-v5-camera-icon-display: none;
+    --card-v5-bottom-default-display: flex;
+    --card-v5-bottom-buttons-display: none;
+    --card-v5-body-border-radius: 15px;
+}
+
+.card-v5-container-with-top { /* Create variant of card v5 with top bar and buttons in bottom section when used in conjunction with base container class */
+    --card-v5-top-display: flex;
+    --card-v5-camera-icon-display: flex;
+    --card-v5-bottom-default-display: none;
+    --card-v5-bottom-buttons-display: flex;
+    --card-v5-body-border-radius: 0;
+}
+
+.card-v5-button-close {
+    top: 25px;
+    right: 25px;
+}
+
+.card-v5-top-shadow {
+    display: var(--card-v5-top-display);
+}
+
+.card-v5-top {
+    height: 95px;
+    background-color: var(--card-v5-background-colour);
+    border-color: var(--card-v5-border-colour);
+}
+
+.card-v5-top-label {
+    color: var(--card-v5-primary-label-colour);
+}
+
+.card-v5-top-label-2 {
+    color: var(--card-v5-secondary-label-colour);
+}
+
+.card-v5-body {
+    background-color: var(--card-v5-image-background-colour);
+    border-color: var(--card-v5-border-colour);
+    border-top-left-radius: var(--card-v5-body-border-radius);
+    border-top-right-radius: var(--card-v5-body-border-radius);
+}
+
+.card-v5-body-image {
+    -unity-background-scale-mode: scale-to-fit;
+} 
+
+.card-v5-button-camera {
+    display: var(--card-v5-camera-icon-display);
+    background-image: var(--card-v5-camera-icon-image);
+    background-color: var(--card-v5-icon-background-colour);
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    right: 0px;
+}
+
+.card-v5-bottom {
+    height: 179px;
+    border-color: var(--card-v5-border-colour);
+    background-color: var(--card-v5-background-colour);
+}
+
+.card-v5-bottom-default {
+    display: var(--card-v5-bottom-default-display);
+}
+
+.card-v5-bottom-default-primarylabel {
+    color: var(--card-v5-primary-label-colour);
+}
+
+.card-v5-bottom-default-secondarylabel {
+    color: var(--card-v5-secondary-label-colour);
+}
+
+.card-v5-bottom-default-tag {
+    background-color: var(--card-v5-tag-background-colour);
+    width: 127px;
+    height: 35px;
+}
+
+.card-v5-bottom-default-tag-label {
+    color: var(--card-v5-tag-label-colour);
+}
+
+.card-v5-bottom-buttons {
+    display: var(--card-v5-bottom-buttons-display);
+}
+
+.card-v5-bottom-buttons-label {
+    color: var(--card-v5-primary-label-colour);
+}
+
+.card-v5-shadow-variables {
+    --card-v5-top-inner-shadow: var(--card-v5-top-shadow-inner-colour);
+    --card-v5-top-outer-shadow: var(--card-v5-top-shadow-outer-colour);
+}

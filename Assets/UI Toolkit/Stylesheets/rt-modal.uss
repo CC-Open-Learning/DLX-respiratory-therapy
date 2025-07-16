@@ -1,0 +1,80 @@
+.modal {
+    background-color: var(--modal-background-colour);
+    min-width: 1025px;
+    max-width: 1025px;
+    min-height: 585px;
+}
+
+.modal-canvas {
+    background-color: var(--canvas-dim-colour);
+}
+
+.modal-image-background {
+    background-image: var(--modal-image-background);
+    -unity-background-image-tint-color: var(--modal-image-background-tint-colour);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 200px;
+    height: 300px;
+}
+
+.modal-image {
+    -unity-background-scale-mode: scale-to-fit;
+    width: 190px;
+    height: 290px;
+}
+
+.modal-image-note {
+    -unity-background-image-tint-color: var(--modal-image-note-background-tint-colour);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 32px;
+    height: 32px;
+}
+
+.modal-label-title {
+    color: var(--modal-label-title-colour);
+}
+
+.modal-label-description {
+    color: var(--modal-label-description-colour);
+}
+
+.modal-label-sub-description {
+    color: var(--modal-label-sub-description-colour);
+}
+
+.modal-label-notes {
+    color: var(--modal-label-note-colour);
+}
+
+/* styles specific to EndModal uxml */
+.modal-label-title-colour {
+    color: var(--modal-end-label-title-colour);
+}
+
+.modal-label-description-colour {
+    color: var(--modal-end-label-description-colour);
+}
+
+.modal-end-next-button-icon {
+    height: 22px;
+    width: 22px;
+    background-image: var(--modal-image-button-arrow);
+    -unity-background-image-tint-color: var(--modal-image-arrow-tint-colour);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.modal-line-seperator {
+    height: 1px;
+    width: 436px;
+    background-image: var(--modal-image-line);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.modal-procedure-end-btn {
+    height: 48px;
+    width: 300px;
+}
+
+.modal-end-footer-bottom-0 {
+    bottom: 0px;
+}

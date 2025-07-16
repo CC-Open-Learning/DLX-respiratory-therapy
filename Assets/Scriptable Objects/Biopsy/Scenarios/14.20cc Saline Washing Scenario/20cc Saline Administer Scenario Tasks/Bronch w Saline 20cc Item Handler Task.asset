@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640c0e2cc6948174a869b23577c43466, type: 3}
+  m_Name: Bronch w Saline 20cc Item Handler Task
+  m_EditorClassIdentifier: 
+  TaskIndexIncrement: 1
+  ScenarioIndexIncrement: 0
+  HideSpeakerUI: 0
+  IsExecuted: 0
+  Description: Observe the Saline irrigating the patient's airway.
+  biopsyProcedureComponentHandler: {fileID: 0}
+  ProcedureEquipment: 10
+  EnableAllTableItems: 0

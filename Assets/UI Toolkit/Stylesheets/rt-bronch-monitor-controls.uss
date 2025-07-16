@@ -1,0 +1,26 @@
+.bronch-monitor-control-panel-size {
+    width: 175px;
+    height: 520px;
+    background-color: var(--bronch-monitor-control-panel-color);
+    position: absolute;
+    right: 0px;
+    margin-right: 150px;
+    margin-top: 250px;
+}
+
+.bronch-monitor-control-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-width: 4px;
+}
+
+.bronch-monitor-control-label-title {
+    color: var(--bronch-monitor-control-title-colour);
+}
+
+.bronch_tower_control_button_sprite {
+    width: 80px;
+    height: 80px;
+    
+}

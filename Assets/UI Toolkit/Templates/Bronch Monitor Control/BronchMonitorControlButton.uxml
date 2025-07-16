@@ -1,0 +1,10 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-bronch-monitor-controls.uss?fileID=7433441132597879392&amp;guid=64db9ad6b7e600b4c8e0b3537369ec08&amp;type=3#rt-bronch-monitor-controls" />
+    <engine:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ControllerButton" class="p-0 m-0 justify-center align-items-center bronch-monitor-control-circle bw-4 button-close">
+        <engine:VisualElement name="Sprite" class="button-close-sprite bronch_tower_control_button_sprite" />
+    </engine:Button>
+    <engine:Label text="[Title]" name="TitleLabel" class="fw-700 text-wrap fs-24 bronch-monitor-control-label-title p-0 m-0 pt-20 text-align-middle-center" />
+</engine:UXML>

@@ -1,0 +1,16 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-patient-monitor.uss?fileID=7433441132597879392&amp;guid=3f1f1eccfb4b72140ba736c887a4f6a9&amp;type=3#rt-patient-monitor" />
+    <engine:VisualElement name="Container" picking-mode="Ignore" class="grow align-items-end justify-center patient-monitor-container">
+        <engine:VisualElement name="PatientMonitor" class="patient-monitor br-20 align-items-center">
+            <engine:Label text="What do you&#10;recommend?" name="PatientMonitorLabel" class="fw-400 fs-24 patient-monitor-label text-wrap text-align-middle-center m-0 p-0" />
+            <engine:VisualElement name="ProceedContainer" class="patient-monitor-button-container align-items-center justify-center patient-monitor-button-container-proceed">
+                <engine:Button text="Proceed" name="ProceedButton" focusable="false" class="patient-monitor-button bw-2 fw-700 fs-24 patient-monitor-button-proceed" />
+            </engine:VisualElement>
+            <engine:VisualElement name="PauseContainer" class="patient-monitor-button-container align-items-center justify-center">
+                <engine:Button text="Pause" name="PauseButton" focusable="false" class="patient-monitor-button bw-2 fw-700 fs-24 patient-monitor-button-pause" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

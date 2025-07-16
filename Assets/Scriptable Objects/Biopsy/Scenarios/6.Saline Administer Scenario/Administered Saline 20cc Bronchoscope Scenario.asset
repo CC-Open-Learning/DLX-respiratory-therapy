@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6e968338d535f408fc980e015b118f, type: 3}
+  m_Name: Administered Saline 20cc Bronchoscope Scenario
+  m_EditorClassIdentifier: 
+  ScenarioName: Adminster 20cc of Saline
+  ScenarioTaskList:
+  - {fileID: 11400000, guid: 537e7d0bfbd0740528470a547d35ea3f, type: 2}
+  - {fileID: 11400000, guid: c6fe19efb2930d44384ac88e586bd040, type: 2}
+  - {fileID: 11400000, guid: 0dde9ab732f8944db9dbbd401421e45d, type: 2}
+  ShowInHandbook: 1

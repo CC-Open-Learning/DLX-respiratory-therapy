@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9563c93cca64340befe25ed3f888c2, type: 3}
+  m_Name: Advance Forcep Bronch Monitor Task
+  m_EditorClassIdentifier: 
+  TaskIndexIncrement: 0
+  ScenarioIndexIncrement: 0
+  HideSpeakerUI: 0
+  IsExecuted: 0
+  Description: Advance the forceps and clamp down on the lung tissue.
+  GoToNextTask: 1
+  GoToNextScenario: 0
+  ShowEmptyAirway: 0
+  AutoCycleImages: 0
+  MonitorStatus: 2
+  BronchMonitorDataList:
+  - Sprite: {fileID: 21300000, guid: cd30d67ade7a00d4dac571b2e7dbed01, type: 3}
+    PromptTask: {fileID: 11400000, guid: f082b99f76fde4e4993c7b1ff8246cc0, type: 2}
+  - Sprite: {fileID: 21300000, guid: 2479acaee209b4ec68ea189525b74333, type: 3}
+    PromptTask: {fileID: 11400000, guid: bc39902a6c7584e569bda9b5dfb349a9, type: 2}

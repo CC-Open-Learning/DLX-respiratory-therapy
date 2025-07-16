@@ -1,0 +1,14 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-patient-status.uss?fileID=7433441132597879392&amp;guid=5756a56e287eb8041a38f55e444c860d&amp;type=3#rt-patient-status" />
+    <engine:VisualElement name="Window" class="br-10 status-window">
+        <engine:VisualElement name="Header" class="flex-row status-header-height status-header-text">
+            <engine:VisualElement name="Bar" class="mt-12 mb-12 ml-12 status-bar" />
+            <engine:Label tabindex="-1" text="[Name]" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="header-label fw-400 m-0 p-0 text-align-middle-left grow fs-32 pl-8 bold" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Content" class="grow mr-12 mb-12 ml-12">
+            <engine:Label text="Label" name="ContentLabel" class="text-wrap fs-24 mr-12 ml-12 mt-4 mb-4 status-description-text" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

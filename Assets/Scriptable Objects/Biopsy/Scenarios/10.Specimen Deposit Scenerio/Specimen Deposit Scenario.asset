@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6e968338d535f408fc980e015b118f, type: 3}
+  m_Name: Specimen Deposit Scenario
+  m_EditorClassIdentifier: 
+  ScenarioName: Deposit the Collected Specimen
+  ScenarioTaskList:
+  - {fileID: 11400000, guid: 874b524f63c7e264a8568d58f2c5f658, type: 2}
+  - {fileID: 11400000, guid: c7f6b8f514d193f47a792460b4637fc1, type: 2}
+  - {fileID: 11400000, guid: 5cf97bf694c6a734b9516e69b55336b7, type: 2}
+  - {fileID: 11400000, guid: 2612a790c9d2d3e44b5173143728551d, type: 2}
+  - {fileID: 11400000, guid: 3b2b8dc35c404164784ecee9a580b973, type: 2}
+  - {fileID: 11400000, guid: a65ab3efba55bbd4c80d5d24856301f6, type: 2}
+  ShowInHandbook: 1

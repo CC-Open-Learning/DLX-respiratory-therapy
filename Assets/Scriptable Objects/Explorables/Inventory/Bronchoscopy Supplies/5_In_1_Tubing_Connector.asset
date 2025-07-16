@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: 5_In_1_Tubing_Connector
+  m_EditorClassIdentifier: 
+  ExplorableName: 5-in-1 Tubing Connector
+  ExplorableDescription: This is a versatile connector medical device used to connect
+    suction tubing of various sizes. It is designed to fit five different tubing
+    diameters, typically ranging from 5 to 11 mm.
+  ExplorableSprite: {fileID: 21300000, guid: 978267b7c0f96f14e8517f0aae0c30e2, type: 3}
+  ExplorableCategory: 2
+  PoiType: 11
+  ExplorableAudioClip: {fileID: 8300000, guid: 5c985af4e42110b408365491c160062a, type: 3}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1816b0705476cb47bb23ff612c939e8, type: 3}
+  m_Name: UIPanelDataSO
+  m_EditorClassIdentifier: 
+  PanelContents:
+  - Type: 2
+    Header: Conclusion
+    Title: Exploration Complete
+    Message: "Nice work! You understand the vital role of the supplies and equipment
+      in a bronchoscopy procedure. I hope you feel more confident and prepared for
+      your clinical placement.\r"
+    ButtonText: Return to Menu
+  - Type: 1
+    Header: Welcome!
+    Title: Welcome to Conestoga General Hospital
+    Message: "I\r''m Kris Lee, your preceptor. Here in the bronchoscopy suite, you'll
+      find the supplies, medications, and equipment needed to perform a bronchoscopy.
+      \r\n\r\nI invite you to explore these items now.\r"
+    ButtonText: Begin

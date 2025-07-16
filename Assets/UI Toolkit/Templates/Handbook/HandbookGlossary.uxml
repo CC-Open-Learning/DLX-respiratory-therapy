@@ -1,0 +1,20 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="GlossaryContainer" class="grow">
+        <engine:VisualElement name="TabsContainer">
+            <engine:VisualElement name="Tabs" class="fs-24 flex-row align-self-center justify-center button-category-container">
+                <engine:Button text="Medications" double-click-selects-word="false" name="CategoryMedications" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/Medications.asset?fileID=11400000&amp;guid=0677695235669b640ab3e6b13f695703&amp;type=2#Medications" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                <engine:Button text="General Supplies" name="CategoryGenSupplies" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/GenSupplies.asset?fileID=11400000&amp;guid=75c958e617a15104882ab7cc69d44179&amp;type=2#GenSupplies" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                <engine:Button text="Bronchoscopy Supplies" name="CategoryBronchSupplies" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/BronchSupplies.asset?fileID=11400000&amp;guid=6fd2c34e70ea57f44a7566109541574d&amp;type=2#BronchSupplies" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="GlossaryTable" class="table mt-32 mb-8 mr-32 ml-32" style="display: flex;">
+            <engine:VisualElement name="Header" class="flex-row w-100 justify-space-around table-header align-items-center">
+                <engine:Label text="NAME" class="w-100 fs-24 bold pl-32" />
+                <engine:Label text="DESCRIPTION" class="w-100 fs-24 bold pl-32" />
+            </engine:VisualElement>
+            <engine:VisualElement name="HeaderBottom" class="table-header-bottom" />
+            <engine:ScrollView name="GlossaryHolder" horizontal-scroller-visibility="AlwaysVisible" vertical-scroller-visibility="AlwaysVisible" elasticity="0" class="scrollbar" />
+            <engine:VisualElement name="Footer" class="flex-row w-100 justify-space-around align-items-center table-footer" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

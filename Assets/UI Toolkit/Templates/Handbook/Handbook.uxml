@@ -1,0 +1,331 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-handbook.uss?fileID=7433441132597879392&amp;guid=20b4428ba4da416cad7fd4910f5442cf&amp;type=3#rt-handbook" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-steppers.uss?fileID=7433441132597879392&amp;guid=9c7a4f35d845a2d4b8da8894b698f41b&amp;type=3#velcro-steppers" />
+    <engine:VisualElement name="Handbook" class="justify-center grow">
+        <engine:VisualElement name="Window" class="br-20 window-single handbook-window justify-center align-self-center">
+            <engine:VisualElement name="Header" class="flex-row w-100">
+                <engine:VisualElement name="HeaderEnd" class="absolute w-100 header-end br-tl-20 br-tr-20">
+                    <ui:VisualElement xmlns:ui="UnityEngine.UIElements" template="Button-Close" name="CloseButton" class="align-self-end mr-16 mt-48">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseBtn" class="p-0 m-0 justify-center align-items-center button-close bw-2">
+                            <ui:VisualElement name="Sprite" class="button-close-sprite" />
+                        </ui:Button>
+                    </ui:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="HeaderStart" class="header-start pl-32" style="min-width: 30%; min-height: 75px;">
+                    <engine:Label tabindex="-1" text="Handbook" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NameLabel" class="fw-700 fs-36 m-0 p-0 grow text-align-middle-left header-label" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="flex-row grow">
+                <engine:VisualElement name="LeftSide" class="mt-48 ml-12">
+                    <engine:VisualElement name="PhysicianContainer" class="flex-row align-items-center physician-container ml-8">
+                        <engine:VisualElement name="PhysicianImage" class="handbook-physician-image mr-16 grow" />
+                        <ui:VisualElement xmlns:ui="UnityEngine.UIElements" template="Tab-Vertical" name="Container" class="grow">
+                            <ui:Label text="Preceptor" name="NameLabel" class="handbook-text fw-700 fs-24" />
+                            <ui:VisualElement name="GlowContainer" class="br-20 navigation-vertical handbook-physician-text-container">
+                                <Kamgam.UIToolkitGlow.Glow name="Glow" width-left="-1" width="1" outer-color="#FFFFFF00" inner-color="#FFFFFFBF" split-width="true" width-right="3.5" width-bottom="6.5" width-top="-1" overlap-width="0" inherit-border-colors="true" class="br-20 handbook-glow">
+                                    <ui:Label text="Refer to these sections for more information." name="PhysicianLabel" class="label-wrap handbook-text m-0 p-0 fw-400 fs-24" style="padding-top: 6px; padding-left: 10px;" />
+                                </Kamgam.UIToolkitGlow.Glow>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="TabVertical" class="br-20 navigation-vertical h-100 handbook-tab-container mb-48 mt-28">
+                        <Kamgam.UIToolkitGlow.Glow name="Glow" width-left="-1" width="1" outer-color="#FFFFFF00" inner-color="#FFFFFFBF" split-width="true" width-right="3.5" width-bottom="6.5" width-top="-1" overlap-width="0" inherit-border-colors="true" class="grow br-20 handbook-glow">
+                            <engine:VisualElement name="TabButtonContainer" class="grow navigation-vertical-container justify-space-between tab-button-container">
+                                <ui:VisualElement xmlns:ui="UnityEngine.UIElements" template="Button-Tab-Vertical" name="ProgressButtonContainer">
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-navigation.uss?fileID=7433441132597879392&amp;guid=2d2ef40308c964a4a8d71ded2242774c&amp;type=3#velcro-navigation" />
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+                                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProgressButton" focusable="false" class="pl-40 pr-40 pt-12 pb-12 flex-row justify-center align-items-center bw-0 m-0 mt-12 mb-12 grow handbook-button-category-unselected">
+                                        <ui:VisualElement name="ImageContainer" class="mr-12">
+                                            <ui:VisualElement name="Icon" class="handbook-progress-icon" />
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="LabelContainer" class="grow">
+                                            <ui:Label tabindex="-1" text="My Progress" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TabLabel" class="m-0 p-0 fw-700 fs-24 text-wrap text-align-middle-left" />
+                                        </ui:VisualElement>
+                                    </ui:Button>
+                                </ui:VisualElement>
+                                <ui:VisualElement xmlns:ui="UnityEngine.UIElements" template="Button-Tab-Vertical" name="GlossaryButtonContainer">
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-navigation.uss?fileID=7433441132597879392&amp;guid=2d2ef40308c964a4a8d71ded2242774c&amp;type=3#velcro-navigation" />
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+                                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GlossaryButton" focusable="false" class="pl-40 pr-40 pt-12 pb-12 flex-row justify-center align-items-center bw-0 m-0 mt-12 mb-12 handbook-button-category-unselected">
+                                        <ui:VisualElement name="ImageContainer" class="mr-12">
+                                            <ui:VisualElement name="Icon" class="handbook-glossary-icon" />
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="LabelContainer" class="grow">
+                                            <ui:Label tabindex="-1" text="Glossary" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TabLabel" class="m-0 p-0 fw-700 fs-24 text-wrap text-align-middle-left" />
+                                        </ui:VisualElement>
+                                    </ui:Button>
+                                </ui:VisualElement>
+                                <ui:VisualElement xmlns:ui="UnityEngine.UIElements" template="Button-Tab-Vertical" name="TableButtonContainer">
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-navigation.uss?fileID=7433441132597879392&amp;guid=2d2ef40308c964a4a8d71ded2242774c&amp;type=3#velcro-navigation" />
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+                                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="TableButton" focusable="false" class="pl-40 pr-40 pt-12 pb-12 flex-row justify-center align-items-center bw-0 m-0 mt-12 mb-12 handbook-button-category-unselected">
+                                        <ui:VisualElement name="ImageContainer" class="mr-12">
+                                            <ui:VisualElement name="Icon" class="handbook-table-icon" />
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="LabelContainer" class="grow">
+                                            <ui:Label tabindex="-1" text="Procedure Table" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TabLabel" class="m-0 p-0 fw-700 fs-24 text-wrap text-align-middle-left" />
+                                        </ui:VisualElement>
+                                    </ui:Button>
+                                </ui:VisualElement>
+                                <ui:VisualElement xmlns:ui="UnityEngine.UIElements" template="Button-Tab-Vertical" name="MonitorButtonContainer">
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-navigation.uss?fileID=7433441132597879392&amp;guid=2d2ef40308c964a4a8d71ded2242774c&amp;type=3#velcro-navigation" />
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+                                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="MonitorButton" focusable="false" class="pl-40 pr-40 pt-12 pb-12 flex-row justify-center align-items-center bw-0 m-0 mt-12 mb-12 handbook-button-category-unselected">
+                                        <ui:VisualElement name="ImageContainer" class="mr-12">
+                                            <ui:VisualElement name="Icon" class="handbook-monitor-icon" />
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="LabelContainer" class="grow">
+                                            <ui:Label tabindex="-1" text="Patient Monitor" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TabLabel" class="m-0 p-0 fw-700 fs-24 text-wrap text-align-middle-left" />
+                                        </ui:VisualElement>
+                                    </ui:Button>
+                                </ui:VisualElement>
+                            </engine:VisualElement>
+                        </Kamgam.UIToolkitGlow.Glow>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="RightSide" class="br-20 align-self-center right-side-parent-container ml-32">
+                    <engine:VisualElement name="ContentContainer" class="br-20 bw-1 handbook-content-container grow">
+                        <engine:VisualElement name="ProgressContainer" enabled="true" style="display: flex;">
+                            <engine:VisualElement name="HandbookProgress" class="grow w-max-100 h-max-100">
+                                <ui:VisualElement xmlns:ui="UnityEngine.UIElements" template="NodeStepperContainer" name="NodeStepperContainer" class="ml-48 mt-16 pl-16 mr-48 pr-16">
+                                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                                    <ui:VisualElement name="NodeStepper" class="flex-row w-100">
+                                        <ui:VisualElement name="NodeContainerOne" class="justify-center align-items-center node-container">
+                                            <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                                                <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                                            </ui:VisualElement>
+                                            <ui:VisualElement name="LabelContainer">
+                                                <ui:Label tabindex="-1" text="Washing" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                                            </ui:VisualElement>
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="StepContainerOne" class="grow">
+                                            <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="NodeContainerTwo" class="justify-center align-items-center node-container">
+                                            <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                                                <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                                            </ui:VisualElement>
+                                            <ui:VisualElement name="LabelContainer">
+                                                <ui:Label tabindex="-1" text="Tissue Collection" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                                            </ui:VisualElement>
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="StepContainerTwo" class="grow">
+                                            <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="NodeContainerThree" class="justify-center align-items-center node-container">
+                                            <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                                                <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                                            </ui:VisualElement>
+                                            <ui:VisualElement name="LabelContainer">
+                                                <ui:Label tabindex="-1" text="Vitals Check" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                                            </ui:VisualElement>
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="StepContainerThree" class="grow">
+                                            <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="NodeContainerFour" class="justify-center align-items-center node-container">
+                                            <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                                                <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                                            </ui:VisualElement>
+                                            <ui:VisualElement name="LabelContainer">
+                                                <ui:Label tabindex="-1" text="Sputum Collection" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                                            </ui:VisualElement>
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="StepContainerFour" class="grow">
+                                            <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="NodeContainerFive" class="justify-center align-items-center node-container mr-32">
+                                            <ui:VisualElement name="Node" class="justify-center align-items-center node bw-5 node-not-started">
+                                                <ui:VisualElement name="Sprite" class="node-sprite bw-0 node-sprite-not-started" />
+                                            </ui:VisualElement>
+                                            <ui:VisualElement name="LabelContainer">
+                                                <ui:Label tabindex="-1" text="Post Procedure" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeLabel" class="m-0 p-0 fs-28 fw-700 text-align-middle-center node-step-label" />
+                                            </ui:VisualElement>
+                                        </ui:VisualElement>
+                                        <ui:VisualElement name="StepContainerFive">
+                                            <ui:VisualElement name="Step" class="node-step bw-t-2 bw-b-2 w-100 node-step-not-started" />
+                                        </ui:VisualElement>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <engine:VisualElement name="Table" class="table mt-32 mb-8 mr-32 ml-32">
+                                    <engine:VisualElement name="Header" class="flex-row w-100 justify-space-around table-header align-items-center">
+                                        <engine:Label text="MY TASKS" class="w-100 fs-24 bold pl-32" />
+                                    </engine:VisualElement>
+                                    <engine:VisualElement name="HeaderBottom" class="table-header-bottom" />
+                                    <engine:ScrollView name="CategoryHolder" horizontal-scroller-visibility="AlwaysVisible" vertical-scroller-visibility="AlwaysVisible" elasticity="0" class="scrollbar category-holder" />
+                                    <engine:VisualElement name="Footer" class="flex-row w-100 justify-space-around align-items-center table-footer" />
+                                </engine:VisualElement>
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:VisualElement name="GlossaryContainer" style="display: none;">
+                            <engine:VisualElement name="HandbookGlossary" class="grow h-max-100 w-max-100">
+                                <engine:VisualElement name="TabsContainer">
+                                    <engine:VisualElement name="Tabs" class="fs-24 flex-row align-self-center justify-center button-category-container">
+                                        <engine:Button text="Medications" double-click-selects-word="false" name="CategoryMedications" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/Medications.asset?fileID=11400000&amp;guid=0677695235669b640ab3e6b13f695703&amp;type=2#Medications" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                                        <engine:Button text="General Supplies" name="CategoryGenSupplies" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/GenSupplies.asset?fileID=11400000&amp;guid=75c958e617a15104882ab7cc69d44179&amp;type=2#GenSupplies" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                                        <engine:Button text="Bronchoscopy Supplies" name="CategoryBronchSupplies" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/BronchSupplies.asset?fileID=11400000&amp;guid=6fd2c34e70ea57f44a7566109541574d&amp;type=2#BronchSupplies" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                                        <engine:Button text="Bronchtower" name="CategoryBronchTowerSupplies" data-source="project://database/Assets/Scriptable%20Objects/Inventory%20Categories/BronchSupplies.asset?fileID=11400000&amp;guid=6fd2c34e70ea57f44a7566109541574d&amp;type=2#BronchSupplies" class="button-category button-category-unselected m-0 bw-l-0 bw-r-0 bw-t-0" />
+                                    </engine:VisualElement>
+                                </engine:VisualElement>
+                                <engine:VisualElement name="GlossaryTable" class="table mt-32 mb-8 mr-32 ml-32" style="display: flex;">
+                                    <engine:VisualElement name="Header" class="flex-row w-100 table-header align-items-center">
+                                        <engine:Label text="NAME" class="fs-24 bold pl-32" />
+                                    </engine:VisualElement>
+                                    <engine:VisualElement name="HeaderBottom" class="table-header-bottom" />
+                                    <engine:ScrollView name="MedicationHolder" horizontal-scroller-visibility="AlwaysVisible" vertical-scroller-visibility="AlwaysVisible" elasticity="0" class="scrollbar category-holder" />
+                                    <engine:ScrollView name="GeneralHolder" horizontal-scroller-visibility="AlwaysVisible" vertical-scroller-visibility="AlwaysVisible" elasticity="0" class="scrollbar category-holder" />
+                                    <engine:ScrollView name="BronchSupplyHolder" horizontal-scroller-visibility="AlwaysVisible" vertical-scroller-visibility="AlwaysVisible" elasticity="0" class="scrollbar category-holder" />
+                                    <engine:ScrollView name="BronchTowerHolder" horizontal-scroller-visibility="AlwaysVisible" vertical-scroller-visibility="AlwaysVisible" elasticity="0" class="scrollbar category-holder" style="display: flex;" />
+                                    <engine:VisualElement name="Footer" class="flex-row w-100 justify-space-around align-items-center table-footer" />
+                                </engine:VisualElement>
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:VisualElement name="TableContainer" class="grow" style="display: none;">
+                            <engine:VisualElement name="HandbookProcedureTable" class="grow handbook-monitor-background w-max-100 h-max-100">
+                                <engine:VisualElement name="HandbookProcedureTableHeader" class="mb-28">
+                                    <engine:Label text="Procedure Table" name="HandbookProcedureTableLabel" class="fw-700 fs-28 handbook-text m-0 p-0" />
+                                </engine:VisualElement>
+                                <engine:VisualElement name="HandbookProcedureTableContent" class="grow flex-row justify-center align-content-center">
+                                    <engine:VisualElement name="HandbookProcedureTableImage" class="grow mr-12 w-65">
+                                        <engine:VisualElement name="TableImage" class="grow handbook-table-image bw-1 br-20" />
+                                    </engine:VisualElement>
+                                    <engine:VisualElement name="HandbookProcedureTableLegend" class="ml-12 justify-space-between">
+                                        <engine:VisualElement name="CytologyBrush" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="1" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Cytology Brush" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="BiopsyForceps" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="2" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Biopsy Forceps" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="Saline10cc" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="3" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Saline 10cc" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="Saline20cc" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="4" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Saline 20cc" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="MagillForceps" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="5" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Magill Forceps&#10;" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="LidocaineSpray" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="6" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Lidocaine Spray" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="Epinephrine5cc" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="7" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Epinephrine 5cc" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="SpecimenJar" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="8" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Specimen Jar" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="SputumContainer" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="9" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Sputum Container" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="LidocaineJelly" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="10" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Lidocaine Jelly" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="Lidocaine2Percent" class="flex-row align-items-center">
+                                            <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                                                <engine:Label text="11" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                                            </engine:VisualElement>
+                                            <engine:Label text="Lidocaine 2%" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                                        </engine:VisualElement>
+                                    </engine:VisualElement>
+                                </engine:VisualElement>
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:VisualElement template="HandbookPatientMonitor" name="MonitorContainer" style="display: none;">
+                            <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                            <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+                            <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+                            <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-handbook.uss?fileID=7433441132597879392&amp;guid=20b4428ba4da416cad7fd4910f5442cf&amp;type=3#rt-handbook" />
+                            <engine:VisualElement name="HandbookPatientMonitor" class="grow handbook-monitor-background w-max-100 h-max-100">
+                                <engine:VisualElement name="HandbookPatientMonitorHeader" class="mb-36">
+                                    <engine:Label text="Patient Monitor" name="HandbookPatientMonitorLabel" class="fw-700 fs-28 handbook-text m-0 p-0" />
+                                </engine:VisualElement>
+                                <engine:VisualElement name="HandbookPatientMonitorContent" class="grow flex-row justify-center align-content-center">
+                                    <engine:VisualElement name="HandbookPatientMonitorLeft" class="grow mr-12">
+                                        <engine:VisualElement name="HandbookPatientMonitorImageContainer" class="grow mb-20">
+                                            <engine:VisualElement name="HandbookPatientMonitorImage" class="handbook-monitor-image grow bw-1 br-20" />
+                                        </engine:VisualElement>
+                                        <engine:VisualElement name="HandbookPatientMonitorAbbreviations" class="grow br-20 bw-1 handbook-monitor-abbreviations-container h-max-50 pl-32">
+                                            <engine:Label text="Abbreviations" name="AbbreviationsLabel" class="m-0 p-0 handbook-text fw-700 fs-28" />
+                                            <engine:VisualElement name="AbbreviationsTextContainer">
+                                                <engine:Label text="HR: Heart Rate" name="HRAbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24 mb-8" />
+                                                <engine:Label text="RESP: Respiratory Rate" name="RESPAbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24 mb-8" />
+                                                <engine:Label text="SpO2: Oxygen Saturation by Pulse Oximetry" name="SpO2AbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24 mb-8" />
+                                                <engine:Label text="ETCO2: End-Tidal Carbon Dioxide/CO2" name="ETCO2AbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24 mb-8" />
+                                                <engine:Label text="NIBP: Non-Invasive Blood Pressure" name="NIBPAbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24" />
+                                            </engine:VisualElement>
+                                        </engine:VisualElement>
+                                    </engine:VisualElement>
+                                    <engine:VisualElement name="HandbookPatientMonitorRight" class="grow ml-12 handbook-monitor-description-list w-max-50">
+                                        <engine:ScrollView name="HandbookPatientMonitorDefinitionScrollView" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" class="grow bw-1 handbook-monitor-descriptions-container br-20 pl-28 pt-28 h-100 pb-28">
+                                            <engine:VisualElement name="MonitorDescriptionContainer" class="mb-28">
+                                                <engine:Label text="Vital Signs (VS) Monitor" name="MonitorNameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                                                <engine:Label text="Provides real-time (dynamic) monitoring of essential physiologic parameters of patients undergoing certain medical procedures. Monitoring VS is a key responsibility of the clinical team and can help the team decide when a procedure can continue, be paused, or ended in the interest of patient safety." name="MonitorDescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                                            </engine:VisualElement>
+                                            <engine:VisualElement name="HRDescriptionContainer" class="mb-28">
+                                                <engine:Label text="HR" name="HRNameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                                                <engine:Label text="This real-time (dynamic), quantitative value is the patient&apos;s current heart rate measured in beats per minute (bpm). It is derived from the heart’s electrical activity detected by electrocardiogram (ECG) electrodes attached to the patient’s torso. An ECG lead waveform scalar is typically displayed to the left of the value." name="HRDescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                                            </engine:VisualElement>
+                                            <engine:VisualElement name="RESPDescriptionContainer" class="mb-28">
+                                                <engine:Label text="RESP" name="RESPNameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                                                <engine:Label text="This real-time (dynamic), quantitative value is the patient&apos;s current rate of breathing, expressed in breaths per minute. It is typically derived from measured impedance changes in the ECG electrodes correlating with the cycle of lung inflation and deflation. A signal waveform scalar is typically displayed to the left of the value." name="RESPDescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                                            </engine:VisualElement>
+                                            <engine:VisualElement name="SpO2DescriptionContainer" class="mb-28">
+                                                <engine:Label text="SpO2" name="SpO2NameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                                                <engine:Label text="This real-time (dynamic), quantitative value is the patient&apos;s current arterial oxygen saturation measured as a percentage of hemoglobin. It is measured non-invasively using spectrophotometry and plethysmography, usually with a finger, ear, or forehead probe. A signal waveform scalar is typically displayed to the left of the value." name="SpO2DescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                                            </engine:VisualElement>
+                                            <engine:VisualElement name="ETCO2DescriptionContainer" class="mb-28">
+                                                <engine:Label text="ETCO2" name="ETCO2NameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                                                <engine:Label text="This real-time (dynamic), quantitative value represents the carbon dioxide present at the end of an exhaled (tidal) breath. It is typically expressed as a tension in mmHg. It is measured non-invasively using side-stream sampling near the mouth/nose and spectrophotometry. A value waveform scalar is typically displayed to the left of the value." name="ETCO2DescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                                            </engine:VisualElement>
+                                            <engine:VisualElement name="NIBPDescriptionContainer" class="mb-28">
+                                                <engine:Label text="NIBP" name="NIBPNameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                                                <engine:Label text="This snapshot (static), quantitative measurement represents both the patient&apos;s systolic and diastolic blood pressures at the time of the measurement. Pressures are represented systolic over diastolic and expressed in mmHg. Measurements are derived from an automated inflatable cuff placed around the upper arm using oscillometry to determine both values. Often these devices are set to repeat measurements at a time interval set by the clinician (e.g. once every 5 minutes)." name="NIBPDescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                                            </engine:VisualElement>
+                                        </engine:ScrollView>
+                                    </engine:VisualElement>
+                                </engine:VisualElement>
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

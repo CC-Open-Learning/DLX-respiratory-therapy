@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Saline 0.9%
+  m_EditorClassIdentifier: 
+  ExplorableName: Saline 0.9%
+  ExplorableDescription: Isotonic solution used for bronchial washing, BAL, or general
+    irrigation.
+  ExplorableSprite: {fileID: 21300000, guid: 534cc7b03ef6b6c4dac414035bd24a36, type: 3}
+  ExplorableCategory: 0
+  PoiType: 11
+  ExplorableAudioClip: {fileID: 8300000, guid: e122750735ea57e43aecf5f58b5a1203, type: 3}

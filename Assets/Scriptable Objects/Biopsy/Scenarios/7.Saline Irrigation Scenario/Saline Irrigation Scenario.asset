@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6e968338d535f408fc980e015b118f, type: 3}
+  m_Name: Saline Irrigation Scenario
+  m_EditorClassIdentifier: 
+  ScenarioName: Saline Irrigates the Patient's Airway
+  ScenarioTaskList:
+  - {fileID: 11400000, guid: 8408a470eb7554b69960cdc8601b6a08, type: 2}
+  - {fileID: 11400000, guid: e716b78fe60d145b6a67d3fdd87172e8, type: 2}
+  - {fileID: 11400000, guid: fd5f2afb34aab43cd9a1890026523261, type: 2}
+  - {fileID: 11400000, guid: ccd32349fee3c484ea076d61f59b6d2f, type: 2}
+  - {fileID: 11400000, guid: 7211b649d9799439ca8c76e541c020fa, type: 2}
+  ShowInHandbook: 1

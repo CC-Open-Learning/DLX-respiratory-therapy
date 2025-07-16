@@ -1,0 +1,26 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="ToolbarProcedureButton" src="project://database/Assets/UI%20Toolkit/Templates/Toolbars/ToolbarProcedureButton.uxml?fileID=9197481963319205126&amp;guid=854ac86a3c4b70b41aea2bf729df0c69&amp;type=3#ToolbarProcedureButton" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-toolbar-procedure.uss?fileID=7433441132597879392&amp;guid=997ddfc626ce5db49940910133a66d67&amp;type=3#rt-toolbar-procedure" />
+    <engine:VisualElement name="ToolbarProcedure" class="procedure-toolbar flex-row justify-center align-items-center align-self-center br-10 mt-32">
+        <engine:Instance template="ToolbarProcedureButton" name="PatientMonitorButton" class="procedure-toolbar-image-patient-monitor">
+            <AttributeOverrides element-name="POILabel" text="Patient Monitor" />
+        </engine:Instance>
+        <engine:Instance template="ToolbarProcedureButton" name="PatientViewButton" class="procedure-toolbar-image-patient">
+            <AttributeOverrides element-name="POILabel" text="Patient View" />
+        </engine:Instance>
+        <engine:Instance template="ToolbarProcedureButton" name="FrontViewButton" class="procedure-toolbar-image-front">
+            <AttributeOverrides element-name="POILabel" text="Back to Center" />
+        </engine:Instance>
+        <engine:Instance template="ToolbarProcedureButton" name="ProcedureTableButton" class="procedure-toolbar-image-table">
+            <AttributeOverrides element-name="POILabel" text="Procedure Table" />
+        </engine:Instance>
+        <engine:Instance template="ToolbarProcedureButton" name="BronchoscopeButton" class="procedure-toolbar-image-bronchoscope">
+            <AttributeOverrides element-name="POILabel" text="Bronchoscope" />
+        </engine:Instance>
+        <engine:Instance template="ToolbarProcedureButton" name="BronchMonitorButton" class="procedure-toolbar-image-bronch-monitor">
+            <AttributeOverrides element-name="POILabel" text="Bronch Monitor" />
+        </engine:Instance>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Bronch_ConnectionPort
+  m_EditorClassIdentifier: 
+  ExplorableName: Bronchoscope Connection Port
+  ExplorableDescription: The connection port is where the bronchoscope is plugged
+    into the bronch tower.
+  ExplorableSprite: {fileID: 0}
+  ExplorableCategory: 4
+  PoiType: 2
+  ExplorableAudioClip: {fileID: 8300000, guid: 3c67c22bb33370f4dbd4b93a3c04ffa1, type: 3}

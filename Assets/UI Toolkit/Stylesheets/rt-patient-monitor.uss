@@ -1,0 +1,112 @@
+.patient-monitor {
+    background-color: var(--patient-monitor-background-colour);
+    height: 773px;
+    min-height: 773px;
+    width: 175px;
+}
+
+.patient-monitor-container {
+    margin-right: 11%;
+}
+
+.patient-monitor-label {
+    color: var(--patient-monitor-label-colour);
+    -unity-paragraph-spacing: 36px;
+    margin-top: 95px;
+    letter-spacing: -1.9%;
+}
+
+.patient-monitor-button-container {
+    background-color: var(--patient-monitor-btn-container-background-colour);
+    border-radius: 63px;
+    height: 126px;
+    width: 126px;
+}
+
+.patient-monitor-button-container-proceed {
+    margin-top: 160px;
+    margin-bottom: 110px;
+}
+
+/* Base button class that affects both */
+.patient-monitor-button {
+    border-color: var(--patient-monitor-btn-border-colour);
+    border-radius: 60px;
+    height: 120px;
+    width: 120px;
+}
+
+.patient-monitor-button:hover:enabled {
+    border-color: var(--patient-monitor-btn-border-colour);
+}
+
+/* Proceed button */
+.patient-monitor-button-proceed {
+    background-color: var(--patient-monitor-btn-proceed-background-colour);
+    color: var(--patient-monitor-btn-proceed-label-colour);
+}
+
+.patient-monitor-button-proceed:hover:enabled {
+    background-color: var(--patient-monitor-btn-proceed-background-colour-hover);
+    color: var(--patient-monitor-btn-proceed-label-colour-hover);
+}
+
+/* Pause button */
+.patient-monitor-button-pause {
+    background-color: var(--patient-monitor-btn-pause-background-colour);
+    color: var(--patient-monitor-btn-pause-label-colour);
+}
+
+.patient-monitor-button-pause:hover:enabled {
+    background-color: var(--patient-monitor-btn-pause-background-colour-hover);
+    color: var(--patient-monitor-btn-pause-label-colour-hover);
+}
+
+/* Patient Monitor Report */
+.patient-monitor-report-label {
+    color: var(--patient-monitor-label-colour);
+    -unity-paragraph-spacing: 36px;
+    letter-spacing: -1.9%;
+    margin-bottom: 64px;
+}
+
+.patient-monitor-report-button {
+    width: 141px;
+    margin-top: 88px;
+}
+
+.patient-monitor-back-button {
+    width: 115px;
+}
+
+.patient-monitor-back-button-icon {
+    background-image: var(--patient-monitor-btn-back-icon);
+}
+
+/* Checklist */
+.patient-monitor-checklist-label {
+    color: var(--patient-monitor-label-colour);
+}
+
+.patient-monitor-checkbox {
+    height: 54px;
+    width: 54px;
+}
+
+.patient-monitor-checkbox > .unity-toggle__input {
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.patient-monitor-checkbox > .unity-toggle__input > .unity-toggle__checkmark {
+    max-height: 32px;
+    max-width: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.patient-monitor-checkbox:checked > .unity-toggle__input:checked > .unity-toggle__checkmark {
+    background-image: var(--patient-monitor-checkbox-checkmark);
+}

@@ -1,0 +1,48 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="ScenarioCard" src="project://database/Assets/UI%20Toolkit/Templates/Menus/ScenarioCard.uxml?fileID=9197481963319205126&amp;guid=1e92553938321794881b1ffa68ec0265&amp;type=3#ScenarioCard" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-scenario.uss?fileID=7433441132597879392&amp;guid=79abed885a9f5c545bcff4f54244cfcf&amp;type=3#rt-scenario" />
+    <engine:VisualElement name="Canvas" class="grow w-100 justify-center align-items-center scenario-canvas">
+        <engine:VisualElement name="ScenarioMenu" class="br-20 scenario-panel-color scenario-size">
+            <engine:VisualElement name="Header" class="flex-row w-100">
+                <engine:VisualElement name="HeaderEnd" class="absolute w-100 header-end br-tl-20 br-tr-20" />
+                <engine:VisualElement name="HeaderStart" class="header-start header-size">
+                    <engine:Label tabindex="-1" text="Procedure Biopsy" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleLabel" class="fw-700 fs-36 m-0 p-0 grow text-align-middle-left pl-20 header-label" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="MenuAndImageContainer" class="flex-row height-125">
+                <ui:VisualElement xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" template="Button-Icon-Round-Medium" name="Menuback" class="scenario-menu-back">
+                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+                    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Icon" class="icon-rounded p-0 m-0 justify-center align-items-center bw-2 icon-medium">
+                        <ui:VisualElement name="Image" class="icon-image-rounded icon-image icon-image-medium scenario-menu-back-icon" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <engine:Label tabindex="-1" text="Main Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MenuLabel" class="fw-700 fs-28 grow pt-40 font-color scenario-label-menu" style="height: 119px;" />
+                <engine:VisualElement name="PatientImageAndText" class="scenario-patient-image-text" style="margin-left: 0;">
+                    <engine:Label tabindex="-1" text="Patient&#10;Child&#10;Female" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PatientTitle" class="fw-700 fs-24 font-color scenario-label-patient" />
+                    <engine:VisualElement name="PatientIImage" class="shrink scenario-image" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="DescriptionContainer" class="grow">
+                <engine:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DescriptionLabel" text="Select the task you want to complete" class="fw-700 fs-28 pl-70 font-color scenario-label-description" />
+            </engine:VisualElement>
+            <engine:VisualElement name="ScenarioContainer" class="flex-row scenario-container grow align-items-center">
+                <engine:Instance template="ScenarioCard" name="SetupContainer">
+                    <AttributeOverrides element-name="PrimaryTextLabel" text="Set Up&#10;" />
+                </engine:Instance>
+                <engine:Instance template="ScenarioCard" name="PatientPrepContainer">
+                    <AttributeOverrides element-name="PrimaryTextLabel" text="Patient Prep" />
+                </engine:Instance>
+                <engine:Instance template="ScenarioCard" name="ProcedureContainer">
+                    <AttributeOverrides element-name="PrimaryTextLabel" text="Procedure&#10;" />
+                </engine:Instance>
+                <engine:Instance template="ScenarioCard" name="PostProcedureContainer">
+                    <AttributeOverrides element-name="PrimaryTextLabel" text="Post-Procedure" />
+                </engine:Instance>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

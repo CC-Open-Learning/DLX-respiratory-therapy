@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Suction Canister
+  m_EditorClassIdentifier: 
+  ExplorableName: Suction Canister
+  ExplorableDescription: "This is a medical canister used to collect fluids such
+    as blood, mucus, or other secretions during various medical procedures. It is
+    connected to a suction regulator, which is attached to a vacuum outlet. \n\nThe
+    vacuum creates negative pressure, allowing the canister to effectively remove
+    and store these fluids.\r\n"
+  ExplorableSprite: {fileID: 0}
+  ExplorableCategory: 3
+  PoiType: 10
+  ExplorableAudioClip: {fileID: 8300000, guid: 82d5a5f317cd9a749b449c8497941980, type: 3}

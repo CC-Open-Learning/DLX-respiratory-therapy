@@ -1,0 +1,27 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-card.uss?fileID=7433441132597879392&amp;guid=fabc9f5bdad1d9246a028b46ef9896e8&amp;type=3#velcro-card" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-scenario.uss?fileID=7433441132597879392&amp;guid=79abed885a9f5c545bcff4f54244cfcf&amp;type=3#rt-scenario" />
+    <ui:VisualElement xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" template="CardV1_Default" name="Canvas" class="p-0 m-8">
+        <ui:Button name="CardButton" class="mm-orientation grow bw-b-0 bw-l-0 bw-r-0 bw-t-0 align-self-center align-items-stretch justify-center br-20 pb-12 pr-12 pb-8 m-0 background-hover background-click background-color-button pl-10 scenario-width-card">
+            <ui:VisualElement name="CardContainer" class="card-v1-container card-v1-container-default">
+                <ui:VisualElement name="Card" class="grow">
+                    <ui:VisualElement name="Top" class="card-v1-top br-tl-20 br-tr-20 bw-b-2 justify-center align-items-center card-top-color" />
+                    <ui:VisualElement name="Body" class="grow card-v1-bottom br-br-20 br-bl-20">
+                        <ui:VisualElement name="Seperator" class="card-v1-seperator bw-l-4 bw-r-4" />
+                        <ui:Label tabindex="-1" text="Lorem Ipsum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PrimaryTextLabel" class="card-v1-text m-0 p-0 fs-36 fw-700 m-24 align-self-start" />
+                        <ui:VisualElement name="Status" class="grow flex-column-reverse">
+                            <ui:VisualElement name="CompleteStatus" class="mb-24 ml-28 br-5 display-progress-invisible green-2 pb-24 scenario-card-progress">
+                                <ui:Label text="COMPLETE" name="CompleteLabel" class="fs-20 bold grow pt-16 text-align-middle-center text-wrap" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="InProgressStatus" class="mb-24 ml-28 br-5 inprogress-indicator pt-16 yellow-4 pb-24 scenario-card-progress">
+                                <ui:Label text="IN PROGRESS" name="InProgressLabel" class="bold fs-20 grow text-align-middle-center text-wrap" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:Button>
+    </ui:VisualElement>
+</engine:UXML>

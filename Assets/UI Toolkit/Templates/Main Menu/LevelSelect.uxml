@@ -1,0 +1,51 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-card.uss?fileID=7433441132597879392&amp;guid=fabc9f5bdad1d9246a028b46ef9896e8&amp;type=3#velcro-card" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-level-select.uss?fileID=7433441132597879392&amp;guid=e6236edf5b80c61419616d3a9c97d36a&amp;type=3#rt-level-select" />
+    <engine:VisualElement name="Canvas" class="grow align-items-center justify-center w-100 mm-canvas">
+        <engine:VisualElement name="MainMenuLevelSelect" class="br-20 mm-panel">
+            <engine:VisualElement name="Header" class="flex-row w-100 mm-header" style="background-color: rgba(0, 0, 0, 0.03);">
+                <engine:VisualElement name="HeaderEnd" class="absolute w-100 header-end br-tl-20 br-tr-20 grow" />
+                <engine:VisualElement name="HeaderStart" class="header-start">
+                    <engine:Label tabindex="-1" text="Level select" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="fw-700 fs-36 m-0 p-0 grow text-align-middle-left pl-20 header-label" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="Banner" class="grow align-items-center flex-row justify-end absolute mm-banner">
+                <engine:Label name="ContentTitleText" class="fs-24 p-0 m-0 fw-700 text-align-middle-right mr-12 mm-banner-label-title" />
+                <engine:VisualElement name="Icon" class="mm-banner-image-icon" />
+            </engine:VisualElement>
+            <engine:GroupBox name="Modules" class="grow mm-modules flex-row">
+                <engine:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Orientation" class="m-0 p-0 show-overflow card-v3-container bw-0 card-v3-container-clicked m-24">
+                    <VARLab.Velcro.BoxShadowManager name="Shadow" blur-width="4" offset-y="4" inner-shadow-variable="--card-v3-shadow-colour" outer-shadow-variable="--card-v3-outer-shadow-colour" class="grow card-v3-shadow-variables">
+                        <engine:VisualElement name="Card" class="card-v3 grow">
+                            <engine:VisualElement name="ImageContainer" class="card-v3-imagebox justify-center align-items-center bw-l-4 bw-r-4 bw-t-2">
+                                <engine:VisualElement name="Image" class="mm-image mm-image-orientation" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="Seperator" class="card-v3-seperator bw-l-4 bw-r-4" />
+                            <engine:VisualElement name="Body" class="grow justify-center align-items-start card-v3-body bw-l-4 bw-r-4 bw-b-4">
+                                <engine:Label tabindex="-1" text="Orientation" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PrimaryText" class="fw-700 fs-28 m-0 card-v3-primary-text text-no-wrap mr-24 ml-24" />
+                                <engine:Label tabindex="-1" text="Equipment Exploration" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SecondaryText" class="fw-400 fs-24 m-0 card-v3-secondary-text mr-24 ml-24" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </VARLab.Velcro.BoxShadowManager>
+                </engine:Button>
+                <engine:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Biopsy" class="m-0 p-0 show-overflow card-v3-container bw-0 card-v3-container-clicked m-24">
+                    <VARLab.Velcro.BoxShadowManager name="Shadow" blur-width="4" offset-y="4" inner-shadow-variable="--card-v3-shadow-colour" outer-shadow-variable="--card-v3-outer-shadow-colour" class="grow card-v3-shadow-variables">
+                        <engine:VisualElement name="Card" class="card-v3 grow">
+                            <engine:VisualElement name="ImageContainer" class="card-v3-imagebox justify-center align-items-center bw-l-4 bw-r-4 bw-t-2">
+                                <engine:VisualElement name="Image" class="mm-image mm-image-biopsy" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="Seperator" class="card-v3-seperator bw-l-4 bw-r-4" />
+                            <engine:VisualElement name="Body" class="grow justify-center align-items-start card-v3-body bw-l-4 bw-r-4 bw-b-4">
+                                <engine:Label tabindex="-1" text="Procedure Biopsy" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PrimaryText" class="fw-700 fs-28 m-0 card-v3-primary-text text-no-wrap mr-24 ml-24" />
+                                <engine:Label tabindex="-1" text="Patient Child Female" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SecondaryText" class="fw-400 fs-24 m-0 card-v3-secondary-text mr-24 ml-24" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </VARLab.Velcro.BoxShadowManager>
+                </engine:Button>
+            </engine:GroupBox>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

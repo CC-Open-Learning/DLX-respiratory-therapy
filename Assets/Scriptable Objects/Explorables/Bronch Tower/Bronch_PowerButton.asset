@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Bronch_PowerButton
+  m_EditorClassIdentifier: 
+  ExplorableName: Main Power Button
+  ExplorableDescription: The main power button controls the power for all components
+    that are connected to the bronch tower. It is not necessary to power individual
+    pieces of equipment on and off because the main power button will work for all
+    components at once.
+  ExplorableSprite: {fileID: 0}
+  ExplorableCategory: 4
+  PoiType: 1
+  ExplorableAudioClip: {fileID: 8300000, guid: c55f0f888bff6794da90104adc2e8161, type: 3}

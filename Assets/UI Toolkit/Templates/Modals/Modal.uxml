@@ -1,0 +1,37 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Header" src="project://database/Assets/VELCRO%20UI/Templates/Header%20and%20Windows/Header.uxml?fileID=9197481963319205126&amp;guid=4ddcdeade465a68488f2568fcfa1742c&amp;type=3#Header" />
+    <engine:Template name="Button-Primary-Large" src="project://database/Assets/VELCRO%20UI/Templates/Button%20Primary/Button-Primary-Large.uxml?fileID=9197481963319205126&amp;guid=47282cdbd7717774691bb11a42a24414&amp;type=3#Button-Primary-Large" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-modal.uss?fileID=7433441132597879392&amp;guid=914ae285b271e9e4fba64db33865008a&amp;type=3#rt-modal" />
+    <engine:VisualElement name="Canvas" class="grow align-items-center justify-center">
+        <engine:VisualElement name="Window" class="br-20 modal">
+            <engine:Instance template="Header" name="Header" />
+            <engine:VisualElement name="Content" class="flex-row pt-40 pl-40 pr-40 grow">
+                <engine:VisualElement name="ImageContainer" class="mt-24 mr-32 justify-center">
+                    <engine:VisualElement name="ImageBackground" class="modal-image-background justify-center align-items-center">
+                        <engine:VisualElement name="Image" class="modal-image" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="TextContainer" class="grow mt-24">
+                    <engine:VisualElement name="TitleContainer">
+                        <engine:Label text="[Title]" name="TitleLabel" class="m-0 p-0 fw-700 fs-36 text-wrap modal-label-title" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DescriptionContainer" class="grow mt-16 mb-16 justify-center">
+                        <engine:Label text="[Description]" name="DescriptionLabel" class="m-0 p-0 fw-400 text-wrap modal-label-description fs-28" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="SubDescriptionContainer" class="mt-16 mb-16">
+                        <engine:Label text="[SubDescription]" name="SubDescriptionLabel" class="m-0 p-0 fw-400 fs-28 text-wrap modal-label-sub-description" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="NoteContainer" class="flex-row">
+                        <engine:VisualElement name="NoteImage" class="modal-image-note mr-12" />
+                        <engine:Label text="[Note]" name="NoteLabel" class="m-0 p-0 fw-400 fs-24 modal-label-notes text-wrap" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="Footer" class="align-items-center m-40">
+                <engine:Instance template="Button-Primary-Large" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

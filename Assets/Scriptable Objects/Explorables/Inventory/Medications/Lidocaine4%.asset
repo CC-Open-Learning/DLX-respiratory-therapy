@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Lidocaine4%
+  m_EditorClassIdentifier: 
+  ExplorableName: Lidocaine Topical Solution 4%
+  ExplorableDescription: Topical anesthesia primarily used on mucous membranes. 4%
+    Lidocaine is often used in the hypopharynx to suppress the laryngeal and the
+    gag reflexes, reduce discomfort during the procedure and reduce the cough reflex.
+  ExplorableSprite: {fileID: 21300000, guid: a0224273d9515d84ba6897f6ea352128, type: 3}
+  ExplorableCategory: 0
+  PoiType: 11
+  ExplorableAudioClip: {fileID: 8300000, guid: a781985ff2aa03c43bc66c86a18561a5, type: 3}

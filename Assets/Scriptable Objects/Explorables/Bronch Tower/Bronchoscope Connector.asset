@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Bronchoscope Connector
+  m_EditorClassIdentifier: 
+  ExplorableName: Bronchoscope Connector
+  ExplorableDescription: "The bronchoscope connector is the plug that attaches the
+    bronchoscope to the bronch tower. \n\nNote the long connector rod and white dot
+    that will help ensure that the connector is inserted correctly into the connection
+    port. The dot on the connector must line up with the dot on the port."
+  ExplorableSprite: {fileID: 0}
+  ExplorableCategory: 4
+  PoiType: 4
+  ExplorableAudioClip: {fileID: 8300000, guid: a2e0de73ac85c8f46a29d653cf15580b, type: 3}

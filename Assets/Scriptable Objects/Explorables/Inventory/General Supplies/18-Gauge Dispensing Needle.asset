@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: 18-Gauge Dispensing Needle
+  m_EditorClassIdentifier: 
+  ExplorableName: 18-Gauge Dispensing Needle
+  ExplorableDescription: This needle is commonly used in various medical, pharmaceutical,
+    and laboratory procedures for tasks such as extracting fluids or medications
+    from vials, transferring or irrigating solutions, and accessing IV bags.
+  ExplorableSprite: {fileID: 21300000, guid: 43f567b45cc291b44b12ec5f6b84fd9a, type: 3}
+  ExplorableCategory: 1
+  PoiType: 11
+  ExplorableAudioClip: {fileID: 8300000, guid: b586589fdb3a146ee98f6d1b7aab4220, type: 3}

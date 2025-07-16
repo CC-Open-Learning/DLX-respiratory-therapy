@@ -1,0 +1,257 @@
+@import url("/Assets/VELCRO UI/UnityThemes/Dark.tss");
+
+@import url("/Assets/UI Toolkit/Stylesheets/rt-cards.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-inventory.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-main-menu.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-message-display-panel.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-object-viewer.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-progress-indicator.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-toolbar.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-toolbar-poi.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-modal.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-toolbar-procedure.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-prompt.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-bronch-monitor-controls.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-patient-monitor.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-restart-modal.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-patient-status.uss");
+@import url("/Assets/UI Toolkit/Stylesheets/rt-handbook.uss");
+
+
+
+
+:root {
+    /* Shared Variables */
+    --canvas-dim-colour: rgba(117, 117, 117, 0.57);
+
+    /* These variables should use ColourPalette.tss and a theme in the future */
+    /* Procedure Toolbar */
+    --toolbar-procedure-image-table: url("../../Art/UI/Biopsy Procedure/Procedure_Table_Sprite.png");
+    --toolbar-procedure-image-patient-monitor: url("../../Art/UI/Biopsy Procedure/patient_Monitor_Sprite.png");
+    --toolbar-procedure-image-patient: url("../../Art/UI/Biopsy Procedure/Patient_View_Sprite.png");
+    --toolbar-procedure-image-front: url("../../Art/UI/Biopsy Procedure/Front_View_Sprite.png");
+    --toolbar-procedure-image-bronchoscope: url("../../Art/UI/Biopsy Procedure/Bronchoscope_Sprite.png");
+    --toolbar-procedure-image-bronch-monitor: url("../../Art/UI/Common/POI_Sprite.png"); 
+    --toolbar-procedure-background-colour: #000000;
+    --toolbar-procedure-background-colour-hover: #757575;
+    --toolbar-procedure-background-colour-active: #000000;
+    --toolbar-procedure-border-colour: #000000;
+    --toolbar-procedure-border-colour-hover: #FFFFFF;
+    --toolbar-procedure-border-colour-active: #FFCC33;
+    --toolbar-procedure-image-tint-colour: #FFFFFF;
+    --toolbar-procedure-image-tint-colour-hover: #FFFFFF;
+    --toolbar-procedure-image-tint-colour-active: #FFCC33;
+    --toolbar-procedure-label-colour: #FFFFFF;
+    --toolbar-procedure-label-colour-hover: #FFFFFF;
+    --toolbar-procedure-label-colour-active: #FFCC33;
+    --toolbar-procedure-line-colour: #FFFFFF;
+
+    /* POI Toolbar */
+    --toolbar-poi-image-back: url("../../Art/UI/Common/Back_Arrow_Sprite.png");
+    --toolbar-poi-image-poi: url("../../Art/UI/Common/POI_Sprite.png");
+    --toolbar-poi-image-tint-colour: #FFFFFF;
+    --toolbar-poi-image-tint-colour-hover: #FFFFFF;
+    --toolbar-poi-image-tint-colour-active: #FFCC33;
+    --toolbar-poi-background-colour: #000000;
+    --toolbar-poi-background-colour-hover: #757575;
+    --toolbar-poi-background-colour-active: #000000;
+    --toolbar-poi-background-colour-disabled: rgba(0, 0, 0, 0);
+    --toolbar-poi-label-back-color: #FFFFFF;
+    --toolbar-poi-label-back-color-hover: #FFFFFF;
+    --toolbar-poi-label-back-color-active: #FFCC33;
+    --toolbar-poi-border-color: rgba(0, 0, 0, 0);
+    --toolbar-poi-border-colour-hover: #FFFFFF;
+    --toolbar-poi-border-colour-active: #FFCC33;
+    --toolbar-poi-border-colour-disabled: rgba(0, 0, 0, 0);
+    --toolbar-poi-line-colour: #FFFFFF;
+
+    /* Regular Toolbar */
+    --toolbar-home-button-image: url("/Assets/Art/UI/Common/home.png");
+    --toolbar-back-button-image: url("/Assets/Art/UI/Common/Back_Arrow_Sprite.png");
+    --toolbar-handbook-button-image: url("/Assets/Art/UI/Common/Handbook_Sprite.png");
+    --toolbar-background-colour: rgba(0, 0, 0, 0);
+    --toolbar-btn-background-colour: #000000;
+    --toolbar-btn-background-colour-hover: #FFFFFF;
+    --toolbar-btn-border-colour: #FFFFFF;
+    --toolbar-btn-border-colour-hover: #000000;
+    --toolbar-image-tint-colour: #FFFFFF;
+    --toolbar-image-tint-colour-hover: #000000;
+
+    /* Cards */
+    --card-image-placeholder: url("../../VELCRO UI/Sprites/Icons/Default_Sprite.png");
+    --card-image-checkmark: url("/Assets/Art/Images/Icons/Checkmark.png");
+    --card-image-tint-colour: #FFFFFF;
+    --card-background-colour: rgb(45, 45, 45);
+    --card-background-colour-hover: rgb(33, 34, 50);
+    --card-border-colour: rgba(0, 0, 0, 0);
+    --card-border-colour-hover: #FFCC33;
+    --card-label-colour: #FFFFFF;
+
+    /* Inventory Variables */
+    --inventory-background-colour: #000000;
+
+    /* Category Buttons */
+    --inventory-btn-category-colour: rgba(0, 0, 0, 0);
+    --inventory-btn-category-colour-hover: #757575;
+    --inventory-btn-category-border-colour: #FFFFFF;
+    --inventory-btn-category-border-colour-hover: #FFFFFF;
+    --inventory-btn-category-border-colour-active: #FFCC33;
+    --inventory-btn-category-label-colour: #FFFFFF;
+    --inventory-btn-category-label-colour-hover: #FFFFFF;
+    --inventory-btn-category-label-colour-active: #FFCC33;
+
+    /* Inventory Content Bar */
+    --inventory-contentbar-image-cart: url("/Assets/Art/Images/Icons/cart.png");
+    --inventory-contentbar-left-background-colour: #757575;
+    --inventory-contentbar-right-background-colour: #2D2D2D;
+    --inventory-contentbar-label-contents: #FFFFFF;
+    --inventory-contentbar-label-total: #FFFFFF;
+
+    /* Inventory Misc Text */
+    --inventory-panelcontainer-label-info: #B3B3B3;
+    --inventory-panelcontainer-label-amount: #B3B3B3;
+
+    /* Inventory Progress Bar */
+    --inventory-progress-bar-background-colour: #707070;
+    --inventory-progress-bar-background-colour-progress: rgb(75, 193, 126);
+
+    /* Modal */
+    --modal-image-background: url("../../Art/UI/Modals/ModalNPCBackground_Sprite.png");
+    --modal-image-background-tint-colour: #757575;
+    --modal-image-note-background-tint-colour: #21D8FF;
+    --modal-background-colour: #000000;
+    --modal-label-title-colour: #FFFFFF;
+    --modal-label-description-colour: #FFFFFF;
+    --modal-label-sub-description-colour: #FFFFFF;
+    --modal-label-note-colour: #21D8FF;
+
+    /* Biopsy Procedure Ending Modal */
+    --modal-end-label-title-colour: #FFFFFF;
+    --modal-end-label-description-colour: #B3B3B3;
+    --modal-biopsy-end-menu-btn-colour: #E1E1E1;
+    --modal-image-button-arrow: url("../../VELCRO UI/Sprites/Arrows/ArrowRight_Sprite.png");
+    --modal-image-arrow-tint-colour: #000000;
+    --modal-image-line: url("../../Art/UI/Modals/Line_Modal_Biopsy_End.png");
+
+    /* Object Viewer */
+    --objectviewer-image-rotate: url("/Assets/Art/UI/Object Viewer/click_to_rotate.png");
+    --objectviewer-image-zoom: url("/Assets/Art/UI/Object Viewer/zoom_in_out.png");
+    --objectviewer-image-tint-colour: #FFFFFF;
+    --objectviewer-background-colour: #000000;
+    --objectviewer-border-color: #757575;
+    --objectviewer-label-rotate-colour: #FFFFFF;
+    --objectviewer-label-zoom-colour: #FFFFFF;
+    --objectviewer-label-name-colour: #FFFFFF;
+    --objectviewer-label-description-colour: #FFFFFF;
+
+     /* Main Menu */
+    --mm-background-image: url("/Assets/Art/UI/Main Menu/main-menu-background.png");
+    --mm-background-colour: rgba(60, 60, 60, .57);
+
+    /* Main Menu Level Select */
+    --mm-ls-background-colour:  #000000;
+    --mm-image-biopsy: url("/Assets/Art/UI/Menus/BiopsyFemaleIcon.png");
+    --mm-image-orientation: url("/Assets/Art/UI/Menus/OrientationIcon.png");
+    
+    /* Prompts */
+    --prompt-image-close: url("../../VELCRO UI/Sprites/Arrows/ArrowRight_Sprite.png");
+    --prompt-image-close-tint-colour: #FFFFFF;
+    --prompt-btn-background-colour: #757575;
+    --prompt-btn-background-colour-hover: #A1A1A1;
+    --prompt-btn-border-colour: rgba(0, 0, 0, 0);
+    --prompt-btn-border-colour-active: #FFFFFF;
+    --prompt-image-background-colour: #757575;
+    --prompt-image-border-colour: #FFFFFF;
+    --prompt-background-colour: #212232;
+    --prompt-bar-colour: #FFFFFF;
+    --prompt-label-speaker-colour: #FFFFFF;
+    --prompt-label-message-colour: #FFFFFF;
+
+    /*Scenerio menu color and image*/
+    --scenerio-image: url("/Assets/Art/UI/Menus/BiopsyFemaleIcon.png");
+    --scenerio-menu-back-image: url("/Assets/Art/UI/Common/Back_Arrow_Sprite.png");
+    --scenario-background-colour:  #000000;
+    --scenario-label-color: #FFFFFF;
+    --scenario-btn-category-border-colour-hover: #FFFFFF;
+    --scenario-btn-category-border-colour-active: #757575;
+
+    /* Patient Monitor */
+    --patient-monitor-background-colour: #000000;
+    --patient-monitor-label-colour: #FFFFFF;
+    --patient-monitor-btn-container-background-colour: #FFFFFF;
+    --patient-monitor-btn-border-colour: #000000;
+    --patient-monitor-btn-proceed-background-colour: #4BC17E;
+    --patient-monitor-btn-proceed-label-colour: #000000;
+    --patient-monitor-btn-proceed-background-colour-hover: #48A370;
+    --patient-monitor-btn-proceed-label-colour-hover: #FFFFFF;
+    --patient-monitor-btn-pause-background-colour: #B00020;
+    --patient-monitor-btn-pause-label-colour: #FFFFFF;
+    --patient-monitor-btn-pause-background-colour-hover: #950B24;
+    --patient-monitor-btn-pause-label-colour-hover: #000000;
+    --patient-monitor-btn-back-icon: url("/Assets/VELCRO UI/Sprites/Arrows/ArrowBack_Sprite.png");
+    --patient-monitor-checkbox-checkmark: url("/Assets/VELCRO UI/Sprites/Checkmarks/Checkmark_Rounded_Sprite.png");
+
+    /* TODO: This can be deleted as it can be created with Modal.cs and ModalSO.cs */
+    /* Welcome Screen */
+    --ws-text-color: #FFFFFF;
+    --ws-star-image: url("/Assets/Art/UI/Common/StarImage.png");
+    --ws-npc-orientation-image: url("/Assets/Art/UI/Common/NPC_Orientation.png");
+
+    /*Scenerio menu color and image*/
+    --scenerio-image: url("/Assets/Art/UI/Menus/BiopsyFemaleIcon.png");
+
+    --scenario-background-colour:  #000000;
+    --scenario-label-color: #FFFFFF;
+    --scenario-btn-category-border-colour-hover: #FFFFFF;
+    --scenario-btn-category-border-colour-active: #757575;    
+
+    /* Bronch Monitor Controller */
+    --bronch-monitor-control-panel-color: #000000;
+    --bronch-monitor-control-title-colour: #FFFFFF;
+
+    /* Restart modal */
+    --restart-canvas-background-colour: rgba(0, 0, 0, 0.7);
+    --restart-modal-description-text-color: #E1E1E1;
+
+    /* Notication Icons*/
+    --notification-background-image-info: url(../../Art/UI/Notification/info.png);
+    --notification-background-image-success: url(../../Art/UI/Notification/Vector.png);
+    --notification-background-image-error:url(../../Art/UI/Notification/warning.png);
+    
+    /* Handbook */
+    --handbook-label-colour: #FFFFFF;
+    --handbook-right-background-colour: #2D2D2D;
+    --handbook-glow-colour: #FFCC33;
+    --handbook-left-border-colour: #D9D9D9;
+    --handbook-physician-image: url(../../Art/UI/Modals/ModalNPC_1_Sprite.png);
+    --handbook-monitor_icon: url(../../Art/UI/Handbook/HandbookMonitorIcon.png);
+    --handbook-progress_icon: url(../../Art/UI/Handbook/HandbookProgressIcon.png);
+    --handbook-table_icon: url(../../Art/UI/Handbook/HandbookTableIcon.png);
+    --handbook-glossary_icon: url(../../Art/UI/Handbook/HandbookGlossaryIcon.png);
+    --handbook-btn-background-colour: #2D2D2D;
+    --handbook-btn-background-colour-hover: #757575;
+    --handbook-btn-background-selected-colour: #FFCC33;
+    --handbook-btn-text-colour: #FFFFFF;
+    --handbook-btn-text-colour-hover: #FFFFFF;
+    --handbook-btn-text-colour-selected: #000000;
+
+    /* Handbook Progress Section */
+    --handbook-progress-completed: #4BC17E;
+
+    /* Handbook Monitor Section */
+    --handbook-monitor-image: url(../../Art/UI/Handbook/HandbookMonitorImage.png);
+    --handbook-monitor-scrollbar-tracker-colour: #808080;
+
+    /* Handbook Procedure Table Section */
+    --handbook-table-circle-background-colour: #FFCC33;
+    --handbook-table-circle-border-colour: #000000;
+    --handbook-table-circle-label-colour: #000000;
+    --handbook-table-legend-label-colour: #FFFFFF;
+    --handbook-table-image: url(../../Art/UI/Handbook/HandbookProcedureTableImage.png);
+
+    /* Patient Status */
+    --status-window-title-text-colour: #FFFFFF;
+    --status-window-description-text-colour: #FFFFFF;
+    --status-background-colour: #000000;
+    --status-bar-colour: #FFC009;
+}

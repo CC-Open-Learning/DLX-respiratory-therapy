@@ -1,0 +1,23 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-toast.uss?fileID=7433441132597879392&amp;guid=1b6dbd2da63781e418d6b81f9415f058&amp;type=3#velcro-toast" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-prompt.uss?fileID=7433441132597879392&amp;guid=0749549709dc18440abd7bcbc2906d4c&amp;type=3#rt-prompt" />
+    <engine:VisualElement name="Prompt" class="flex-row align-self-center absolute m-40 prompt align-items-center">
+        <engine:VisualElement name="Bar" class="h-100 mr-12 prompt-bar" />
+        <engine:VisualElement name="ImageContainer" class="justify-center align-items-center prompt-image-container mr-12 bw-2">
+            <engine:VisualElement name="Image" class="w-100 h-100 prompt-image-speaker o-100" />
+        </engine:VisualElement>
+        <engine:VisualElement name="LabelContainer" class="grow ml-8 mt-12 mb-20">
+            <engine:VisualElement name="SpeakerContainer" class="mb-8">
+                <engine:Label tabindex="-1" text="[Speaker]" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SpeakerLabel" class="fs-24 fw-700 m-0 p-0 text-wrap prompt-label-speaker" />
+            </engine:VisualElement>
+            <engine:VisualElement name="MessageContainer">
+                <engine:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MessageLabel" text="[Message]" class="p-0 m-0 fs-28 fw-400 text-wrap prompt-label-message" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseBtn" class="m-24 prompt-button-close justify-center align-items-center bw-1">
+            <engine:VisualElement name="CloseBtnImage" class="prompt-button-close-image o-100" />
+        </engine:Button>
+    </engine:VisualElement>
+</engine:UXML>

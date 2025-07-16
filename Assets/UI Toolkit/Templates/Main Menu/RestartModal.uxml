@@ -1,0 +1,28 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Button-Secondary-Medium-1" src="project://database/Assets/VELCRO%20UI/Templates/Button%20Secondary%201/Button-Secondary-Medium-1.uxml?fileID=9197481963319205126&amp;guid=777614e0e3d5d8b458d89fcb7ae95678&amp;type=3#Button-Secondary-Medium-1" />
+    <engine:Template name="Button-Primary-Medium" src="project://database/Assets/VELCRO%20UI/Templates/Button%20Primary/Button-Primary-Medium.uxml?fileID=9197481963319205126&amp;guid=1b64012cf6c9f384ba6e9bdb4c52c4bb&amp;type=3#Button-Primary-Medium" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-restart-modal.uss?fileID=7433441132597879392&amp;guid=5b85b0acaa32530429c6e9885b69a87e&amp;type=3#rt-restart-modal" />
+    <engine:VisualElement name="Canvas" class="grow align-items-center justify-center restart-modal-canvas">
+        <engine:VisualElement name="Window" class="br-20 window-double restart-modal-window">
+            <engine:VisualElement name="Header" style="height: 75px;">
+                <engine:Label tabindex="-1" text="Restart" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="header-label fs-36 fw-400 m-0 p-0 pl-20 text-align-middle-left grow" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="window-double-content br-20 grow mb-28 mr-28 ml-28 restart-modal-content">
+                <engine:VisualElement name="Description">
+                    <engine:Label text="If you choose to restart, your current progress will be lost!&#10; &#10;Are you sure you want to restart?" class="fw-700 restart-modal-description-text" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonContainer" class="restart-modal-button-container grow align-items-end justify-end align-self-stretch">
+                    <engine:Instance template="Button-Secondary-Medium-1" name="CancelButtonContainer" class="restart-modal-button">
+                        <AttributeOverrides element-name="Button" text="Cancel" />
+                    </engine:Instance>
+                    <engine:Instance template="Button-Primary-Medium" name="RestartButtonContainer" class="restart-modal-button">
+                        <AttributeOverrides element-name="Button" text="Restart" />
+                    </engine:Instance>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

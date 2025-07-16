@@ -1,0 +1,56 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-handbook.uss?fileID=7433441132597879392&amp;guid=20b4428ba4da416cad7fd4910f5442cf&amp;type=3#rt-handbook" />
+    <engine:VisualElement name="HandbookPatientMonitor" class="grow handbook-monitor-background w-max-100 h-max-100">
+        <engine:VisualElement name="HandbookPatientMonitorHeader" class="mb-36">
+            <engine:Label text="Patient Monitor" name="HandbookPatientMonitorLabel" class="fw-700 fs-28 handbook-text m-0 p-0" />
+        </engine:VisualElement>
+        <engine:VisualElement name="HandbookPatientMonitorContent" class="grow flex-row justify-center align-content-center">
+            <engine:VisualElement name="HandbookPatientMonitorLeft" class="grow mr-12">
+                <engine:VisualElement name="HandbookPatientMonitorImageContainer" class="grow mb-20">
+                    <engine:VisualElement name="HandbookPatientMonitorImage" class="handbook-monitor-image grow bw-1 br-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="HandbookPatientMonitorAbbreviations" class="grow br-20 bw-1 handbook-monitor-abbreviations-container h-max-50 pl-32">
+                    <engine:Label text="Abbreviations" name="AbbreviationsLabel" class="m-0 p-0 handbook-text fw-700 fs-28" />
+                    <engine:VisualElement name="AbbreviationsTextContainer">
+                        <engine:Label text="HR: Heart Rate" name="HRAbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24 mb-8" />
+                        <engine:Label text="RESP: Respiratory Rate" name="RESPAbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24 mb-8" />
+                        <engine:Label text="SpO2: Oxygen Saturation by Pulse Oximetry" name="SpO2AbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24 mb-8" />
+                        <engine:Label text="ETCO2: End-Tidal Carbon Dioxide/CO2" name="ETCO2AbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24 mb-8" />
+                        <engine:Label text="NIBP: Non-Invasive Blood Pressure" name="NIBPAbbreviationLabel" class="handbook-text fw-400 m-0 p-0 fs-24" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="HandbookPatientMonitorRight" class="grow ml-12 handbook-monitor-description-list w-max-50">
+                <engine:ScrollView name="HandbookPatientMonitorDefinitionScrollView" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" class="grow bw-1 handbook-monitor-descriptions-container br-20 pl-28 pt-28 h-100 pb-28">
+                    <engine:VisualElement name="MonitorDescriptionContainer" class="mb-28">
+                        <engine:Label text="Vital Signs (VS) Monitor" name="MonitorNameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                        <engine:Label text="Provides real-time (dynamic) monitoring of essential physiologic parameters of patients undergoing certain medical procedures. Monitoring VS is a key responsibility of the clinical team and can help the team decide when a procedure can continue, be paused, or ended in the interest of patient safety." name="MonitorDescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="HRDescriptionContainer" class="mb-28">
+                        <engine:Label text="HR" name="HRNameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                        <engine:Label text="This real-time (dynamic), quantitative value is the patient&apos;s current heart rate measured in beats per minute (bpm). It is derived from the heart’s electrical activity detected by electrocardiogram (ECG) electrodes attached to the patient’s torso. An ECG lead waveform scalar is typically displayed to the left of the value." name="HRDescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="RESPDescriptionContainer" class="mb-28">
+                        <engine:Label text="RESP" name="RESPNameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                        <engine:Label text="This real-time (dynamic), quantitative value is the patient&apos;s current rate of breathing, expressed in breaths per minute. It is typically derived from measured impedance changes in the ECG electrodes correlating with the cycle of lung inflation and deflation. A signal waveform scalar is typically displayed to the left of the value." name="RESPDescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="SpO2DescriptionContainer" class="mb-28">
+                        <engine:Label text="SpO2" name="SpO2NameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                        <engine:Label text="This real-time (dynamic), quantitative value is the patient&apos;s current arterial oxygen saturation measured as a percentage of hemoglobin. It is measured non-invasively using spectrophotometry and plethysmography, usually with a finger, ear, or forehead probe. A signal waveform scalar is typically displayed to the left of the value." name="SpO2DescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="ETCO2DescriptionContainer" class="mb-28">
+                        <engine:Label text="ETCO2" name="ETCO2NameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                        <engine:Label text="This real-time (dynamic), quantitative value represents the carbon dioxide present at the end of an exhaled (tidal) breath. It is typically expressed as a tension in mmHg. It is measured non-invasively using side-stream sampling near the mouth/nose and spectrophotometry. A value waveform scalar is typically displayed to the left of the value." name="ETCO2DescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="NIBPDescriptionContainer" class="mb-28">
+                        <engine:Label text="NIBP" name="NIBPNameLabel" class="fw-700 handbook-text fs-36 m-0 p-0 mb-32" />
+                        <engine:Label text="This snapshot (static), quantitative measurement represents both the patient&apos;s systolic and diastolic blood pressures at the time of the measurement. Pressures are represented systolic over diastolic and expressed in mmHg. Measurements are derived from an automated inflatable cuff placed around the upper arm using oscillometry to determine both values. Often these devices are set to repeat measurements at a time interval set by the clinician (e.g. once every 5 minutes)." name="NIBPDescriptionLabel" class="handbook-text fw-400 fs-24 text-wrap m-0 p-0" />
+                    </engine:VisualElement>
+                </engine:ScrollView>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

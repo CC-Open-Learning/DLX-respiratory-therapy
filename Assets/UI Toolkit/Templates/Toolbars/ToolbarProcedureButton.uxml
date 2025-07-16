@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-toolbar-procedure.uss?fileID=7433441132597879392&amp;guid=997ddfc626ce5db49940910133a66d67&amp;type=3#rt-toolbar-procedure" />
+    <engine:Button name="ProcedurePOIButton" focusable="false" class="procedure-toolbar-btn align-items-center justify-center m-0 p-0 bw-3 align-self-center align-content-center br-10 pt-16 p-12" style="white-space: normal;">
+        <engine:VisualElement name="POIIcon" class="procedure-toolbar-image mb-4" style="min-width: 48px; min-height: 48px;" />
+        <engine:Label text="[POI name ]" name="POILabel" class="fs-20 procedure-toolbar-label m-0 p-0 grow fontlatoregular" />
+    </engine:Button>
+</engine:UXML>

@@ -1,0 +1,17 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-toolbar-poi.uss?fileID=7433441132597879392&amp;guid=6b2f11509c5bf8b4cae544165b977e6b&amp;type=3#rt-toolbar-poi" />
+    <engine:VisualElement name="POIToolbar" class="align-items-center br-20 flex-row mt-40 align-self-center p-12 poi-toolbar">
+        <engine:Button name="BackButton" focusable="false" class="bc-general-1 align-items-center p-12 bw-2 m-0 poi-toolbar-btn br-20">
+            <engine:VisualElement name="BackImage" class="poi-toolbar-btn-back-image mb-28" />
+            <engine:Label text="Back" name="BackLabel" class="fw-700 fs-24 m-0 p-0 poi-toolbar-btn-back-label" />
+        </engine:Button>
+        <engine:VisualElement name="Line" class="poi-toolbar-line bw-1 ml-12 mr-12" />
+        <engine:Button enabled="false" name="POIIndicator" focusable="false" class="align-items-center p-12 bw-2 o-100 br-20 m-0 poi-toolbar-btn">
+            <engine:VisualElement name="POIImage" class="poi-toolbar-btn-poi" />
+            <engine:Label text="[POI Name]" name="POILabel" class="fw-700 fs-24 m-0 p-0 poi-toolbar-btn-poi-label" />
+        </engine:Button>
+    </engine:VisualElement>
+</engine:UXML>

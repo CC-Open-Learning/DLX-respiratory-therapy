@@ -1,0 +1,84 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-handbook.uss?fileID=7433441132597879392&amp;guid=20b4428ba4da416cad7fd4910f5442cf&amp;type=3#rt-handbook" />
+    <engine:VisualElement name="HandbookProcedureTable" class="grow handbook-monitor-background w-max-100 h-max-100">
+        <engine:VisualElement name="HandbookProcedureTableHeader" class="mb-28">
+            <engine:Label text="Procedure Table" name="HandbookProcedureTableLabel" class="fw-700 fs-28 handbook-text m-0 p-0" />
+        </engine:VisualElement>
+        <engine:VisualElement name="HandbookProcedureTableContent" class="grow flex-row justify-center align-content-center">
+            <engine:VisualElement name="HandbookProcedureTableImage" class="grow mr-12 w-65">
+                <engine:VisualElement name="TableImage" class="grow handbook-table-image bw-1 br-20" />
+            </engine:VisualElement>
+            <engine:VisualElement name="HandbookProcedureTableLegend" class="ml-12 justify-space-between">
+                <engine:VisualElement name="CytologyBrush" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="1" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Cytology Brush" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="BiopsyForceps" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="2" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Biopsy Forceps" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Saline10cc" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="3" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Saline 10cc" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Saline20cc" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="4" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Saline 20cc" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="MagillForceps" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="5" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Magill Forceps&#10;" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="LidocaineSpray" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="6" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Lidocaine Spray" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Epinephrine5cc" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="7" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Epinephrine 5cc" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="SpecimenJar" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="8" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Specimen Jar" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="SputumContainer" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="9" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Sputum Container" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="LidocaineJelly" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="10" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Lidocaine Jelly" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Lidocaine2Percent" class="flex-row align-items-center">
+                    <engine:VisualElement name="Circle" class="bw-1 handbook-table-circle align-items-center justify-center">
+                        <engine:Label text="11" name="ItemNumber" class="fw-700 fs-24 m-0 p-0 handbook-table-circle-label" />
+                    </engine:VisualElement>
+                    <engine:Label text="Lidocaine 2%" name="ItemName" class="m-0 p-0 handbook-table-legend-label fw-400 fs-28 ml-20" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

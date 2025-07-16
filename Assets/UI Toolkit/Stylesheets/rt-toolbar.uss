@@ -1,0 +1,45 @@
+.toolbar {
+    background-color: var(--toolbar-background-colour);
+    left: 0px; 
+    bottom: 0px;
+    min-width: 94px; 
+    min-height: 94px;
+}
+
+.toolbar-btn {
+    background-color: var(--toolbar-btn-background-colour);
+    border-color: var(--toolbar-btn-border-colour);
+    opacity: 1;
+}
+
+.toolbar-btn:disabled {
+    background-color: var(--toolbar-btn-background-colour);
+    border-color: var(--toolbar-btn-border-colour);
+}
+
+/* Base class that affects both images */
+.toolbar-btn-image {
+    -unity-background-image-tint-color: var(--toolbar-image-tint-colour);
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 70px;
+    min-height: 70px;
+}
+
+.toolbar-btn-image-home {
+    background-image: var(--toolbar-home-button-image);
+}
+
+.toolbar-btn-image-back {
+    background-image: var(--toolbar-handbook-button-image);
+}
+
+/* When the buttons are hovered */
+.toolbar-btn:hover:enabled {
+    background-color: var(--toolbar-btn-background-colour-hover);
+    border-color: var(--toolbar-btn-border-colour-hover);
+}
+
+/* Targets the image child element when the buttons is hovered */
+.toolbar-btn:hover:enabled > .toolbar-btn-image {
+    -unity-background-image-tint-color: var(--toolbar-image-tint-colour-hover);
+}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6e968338d535f408fc980e015b118f, type: 3}
+  m_Name: CP3+CP4
+  m_EditorClassIdentifier: 
+  ScenarioName: AC Vitals Scenario
+  ScenarioTaskList:
+  - {fileID: 11400000, guid: 434c5216041ce3c48bd8a8fa9846f96b, type: 2}
+  - {fileID: 11400000, guid: 307790ab82daf5f45974b6d8b9e9a0fa, type: 2}
+  - {fileID: 11400000, guid: f8e97efdcb1667745b40de8371ef937f, type: 2}
+  - {fileID: 11400000, guid: 81e0a6411e9744b41b29d9b730498b8e, type: 2}
+  - {fileID: 11400000, guid: 1349999e49311bc48a90202cf30737e1, type: 2}
+  - {fileID: 11400000, guid: 902c0dd337d00ba4bb462cda11f19d57, type: 2}
+  - {fileID: 11400000, guid: b110211b81f01ec42ba08d34555b74c4, type: 2}
+  - {fileID: 11400000, guid: e54ce337f121728468421f386346ea67, type: 2}

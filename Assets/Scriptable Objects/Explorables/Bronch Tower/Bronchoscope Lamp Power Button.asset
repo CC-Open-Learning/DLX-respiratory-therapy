@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Bronchoscope Lamp Power Button
+  m_EditorClassIdentifier: 
+  ExplorableName: Bronchoscope Lamp Control Switch
+  ExplorableDescription: When the bronchoscope is connected to the lower unit, the
+    lamp at the tip of the bronchoscope can be turned on and off using the lamp control
+    switch.
+  ExplorableSprite: {fileID: 0}
+  ExplorableCategory: 4
+  PoiType: 2
+  ExplorableAudioClip: {fileID: 8300000, guid: 4a22b87e9ba6b7643a83057df7b9d4a9, type: 3}

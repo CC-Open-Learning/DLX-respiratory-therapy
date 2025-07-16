@@ -1,0 +1,335 @@
+.handbook-window {
+    min-width: 1700px;
+    min-height: 900px;
+    max-height: 900px;
+}
+
+/* Left Side */
+.physician-container {
+    max-width: 390px;
+    max-height: 115px;
+}
+
+.handbook-physician-image {
+    background-image: var(--handbook-physician-image);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 90px;
+    height: 135px;
+}
+
+.handbook-physician-text-container {
+    width: 290px;
+    height: 75px;
+}
+
+.handbook-text {
+    color: var(--handbook-label-colour);
+}
+
+.label-wrap {
+    white-space: normal;
+}
+
+.handbook-tab-container {
+    margin-left: 110px;
+}
+
+.tab-button-container {
+    padding: 80px 0;
+}
+
+.handbook-glow {
+    border-color: var(--handbook-glow-colour);
+}
+
+/* Right Side */
+.right-side-parent-container {
+    background-color: var(--handbook-right-background-colour);
+    width: 70%;
+    max-width: 70%;
+    height: 90%;
+}
+
+.handbook-content-container {
+    border-color: var(--handbook-left-border-colour);
+    width: 1191px;
+    max-width: 1191px;
+    min-width: 1191px;
+}
+
+/* side bar icons */
+.handbook-monitor-icon {
+    background-image: var(--handbook-monitor_icon);
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.handbook-table-icon {
+    background-image: var(--handbook-table_icon);
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.handbook-glossary-icon {
+    background-image: var(--handbook-glossary_icon);
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.handbook-progress-icon {
+    background-image: var(--handbook-progress_icon);
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+/* table styles */
+.table-scenario {
+    width: 100%;
+    font-size: 24px;
+}
+
+.table-element {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: 88px;
+}
+
+.table-element-label-container {
+    height: auto !important;
+    margin-bottom: 16px;
+}
+
+.table-element-label {
+    margin-left: 16px;
+    height: auto;
+}
+
+.table-category-name-holder {
+    padding: 0;
+}
+
+.check-container {
+    border-radius: 50px;
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    align-content: center;
+}
+
+.scenario-complete-label {
+    color: var(--handbook-progress-completed);
+    -unity-font-style: bold;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+.category-holder #unity-content-container {
+    flex-direction: row;
+    width: 1111px;
+    height: 500px;
+}
+
+/* patient monitor section */
+.handbook-monitor-background {
+    padding: 30px;
+}
+
+.handbook-monitor-image {
+    border-color: var(--handbook-left-border-colour);
+    background-image: var(--handbook-monitor-image);
+}
+
+.handbook-monitor-abbreviations-container {
+    border-color: var(--handbook-left-border-colour);
+    justify-content: space-evenly;
+}
+
+.handbook-monitor-descriptions-container {
+    border-color: var(--handbook-left-border-colour);
+}
+
+/* scroll bar overrite */
+.handbook-monitor-description-list {
+}
+
+.handbook-monitor-description-list #unity-low-button {
+    display: none;
+}
+
+.handbook-monitor-description-list #unity-high-button {
+    display: none;
+}
+
+.handbook-monitor-description-list #unity-content-viewport {
+    padding-right: 12px;
+}
+
+.handbook-monitor-description-list #unity-content-container {
+    flex-direction: row;
+}
+
+.handbook-monitor-description-list #unity-slider {
+    margin: 0;
+}
+
+.handbook-monitor-description-list #unity-drag-container #unity-tracker {
+    background-color: var(--handbook-monitor-scrollbar-tracker-colour);
+    border-width: 0;
+    border-radius: 5px;
+    width: 8px;
+    translate: 2.5px 0;
+}
+
+.handbook-monitor-description-list #unity-drag-container #unity-dragger {
+    width: 8px;
+    border-radius: 5px;
+}
+
+/* Glossary Container */
+.button-category-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.button-category {
+    width: 25%;
+}
+
+.glossary-text {
+    font-size: 24px;
+}
+
+
+/* All below styles are related to button click/hover */
+/* Focus style set to match selected style so default blue bar disappears */
+.button-category:focus:enabled {
+    background-color: var(--inventory-btn-category-colour);
+    border-color: var(--inventory-btn-category-border-colour);
+    color: var(--inventory-btn-category-label-colour);
+    border-bottom-width: 2px;
+}
+
+/* Focus style set to match selected style so default blue bar disappears */
+.button-category-select:focus:enabled {
+    border-color: var(--inventory-btn-category-border-colour-active);
+    color: var(--inventory-btn-category-label-colour-active);
+    border-bottom-width: 9px;
+    width: 25%;
+
+}
+
+/* Focus style set to match selected style and override base hover styles */
+.button-category:hover:focus:enabled {
+    background-color: var(--inventory-btn-category-colour-hover);
+    border-color: var(--inventory-btn-category-border-colour-hover);
+    color: var(--inventory-btn-category-label-colour-hover);
+
+}
+
+.button-category-unselected {
+    background-color: var(--inventory-btn-category-colour);
+    border-color: var(--inventory-btn-category-border-colour);
+    color: var(--inventory-btn-category-label-colour);
+    border-bottom-width: 2px;
+}
+
+.button-category-unselected:hover:enabled {
+    background-color: var(--inventory-btn-category-colour-hover);
+    border-color: var(--inventory-btn-category-border-colour-hover);
+    color: var(--inventory-btn-category-label-colour-hover);
+}
+
+.button-category-selected: {
+    width: 25%;
+    background-color: var(--inventory-btn-category-colour);
+    border-color: var(--inventory-btn-category-border-colour-active);
+    color: var(--inventory-btn-category-label-colour-active);
+    -unity-font-style: bold;
+    border-bottom-width: 9px;
+}
+
+/* Focus style set to match selected style and override base hover styles */
+.button-category-selected:focus:enabled {
+    width: 25%;
+    background-color: var(--inventory-btn-category-colour);
+    border-color: var(--inventory-btn-category-border-colour-active);
+    color: var(--inventory-btn-category-label-colour-active);
+    -unity-font-style: bold;
+    border-bottom-width: 9px;
+}
+
+.button-category-selected:hover:enabled {
+    background-color: var(--inventory-btn-category-colour-hover);
+    border-color: var(--inventory-btn-category-border-colour-active);
+    color: var(--inventory-btn-category-label-colour-active);
+}
+
+/* button select/unselect behaviour */
+.handbook-button-category-unselected {
+    background-color: var(--handbook-btn-background-colour);
+}
+
+.handbook-button-category-unselected #TabLabel {
+    color: var(--handbook-btn-text-colour);
+}
+
+.handbook-button-category-unselected #Icon {
+    -unity-background-image-tint-color: var(--handbook-btn-text-colour);
+}
+
+.handbook-button-category-unselected:hover:enabled {
+    background-color: var(--handbook-btn-background-colour-hover);
+}
+
+.handbook-button-category-unselected:hover:enabled #TabLabel {
+    color: var(--handbook-btn-text-colour-hover);
+    -unity-font-style: bold;
+}
+
+.handbook-button-category-unselected:hover:enabled #Icon {
+    -unity-background-image-tint-color: var(--handbook-btn-text-colour-hover);
+}
+
+.handbook-button-category-selected {
+    background-color: var(--handbook-btn-background-selected-colour);
+}
+
+.handbook-button-category-selected:hover:enabled {
+    background-color: var(--handbook-btn-background-selected-colour);
+}
+
+.handbook-button-category-selected #TabLabel {
+    color: var(--handbook-btn-text-colour-selected);
+    -unity-font-style: bold;
+}
+
+.handbook-button-category-selected #Icon {
+    -unity-background-image-tint-color: var(--handbook-btn-text-colour-selected);
+}
+
+/* procedure table section */
+.handbook-table-circle {
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    border-color: var(--handbook-table-circle-border-colour);
+    background-color: var(--handbook-table-circle-background-colour);
+}
+.handbook-table-circle-label {
+    color: var(--handbook-table-circle-label-colour);
+}
+.handbook-table-legend-label {
+    color: var(--handbook-table-legend-label-colour);
+}
+.handbook-table-image {
+    border-color: var(--handbook-left-border-colour);
+    background-image: var(--handbook-table-image);
+}

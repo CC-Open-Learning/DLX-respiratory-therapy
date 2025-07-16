@@ -1,0 +1,77 @@
+.poi-toolbar {
+    background-color: var(--toolbar-poi-background-colour);
+    min-height: 135px;
+}
+
+/* Base button class that affects both */
+.poi-toolbar-btn {
+    background-color: var(--toolbar-poi-background-colour);
+    border-color: var(--toolbar-poi-border-colour);
+    min-width: 140px;
+}
+
+.poi-toolbar-btn:disabled {
+    background-color: var(--toolbar-poi-background-colour-disabled);
+    border-color: var(--toolbar-poi-border-color-disabled);
+}
+
+.poi-toolbar-btn-back-image {
+    background-image: var(--toolbar-poi-image-back);
+    -unity-background-image-tint-color: var(--toolbar-poi-image-tint-colour);
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 48px;
+    min-height: 36px;
+}
+
+.poi-toolbar-btn-back-label {
+    color: var(--toolbar-poi-label-back-color);
+}
+
+/* When the back button is hovered */
+.poi-toolbar-btn:hover:enabled {
+    background-color: var(--toolbar-poi-background-colour-hover);
+    border-color: var(--toolbar-poi-border-colour-hover);
+}
+
+/* Targets the back arrow element when the back button is hovered */
+.poi-toolbar-btn:hover:enabled > .poi-toolbar-btn-back-image {
+    -unity-background-image-tint-color: var(--toolbar-poi-image-tint-colour-hover);
+}
+
+/* Targets the label element when the back button is hovered */
+.poi-toolbar-btn:hover:enabled > .poi-toolbar-btn-back-label {
+    color: var(--toolbar-poi-label-back-color-hover);
+}
+
+/* When the back button is clicked */
+.poi-toolbar-btn:active:enabled {
+    background-color: var(--toolbar-poi-background-colour-active);
+    border-color: var(--toolbar-poi-border-colour-active);
+}
+
+/* Targets the back arrow element when the back button is clicked */
+.poi-toolbar-btn:active:enabled > .poi-toolbar-btn-back-image {
+    -unity-background-image-tint-color: var(--toolbar-poi-image-tint-colour-active);
+}
+
+/* Targets the label element when the back button is clicked */
+.poi-toolbar-btn:active:enabled > .poi-toolbar-btn-back-label {
+    color: var(--toolbar-poi-label-back-color-active);
+}
+
+.poi-toolbar-line {
+    background-color: var(--toolbar-poi-line-colour);
+    width: 0px;
+    height: 80px;
+}
+
+.poi-toolbar-btn-poi {
+    background-image: var(--toolbar-poi-image-poi);
+    -unity-background-image-tint-color: var(--toolbar-poi-image-tint-colour-active);
+    min-width: 64px;
+    min-height: 64px;
+}
+
+.poi-toolbar-btn-poi-label {
+    color: var(--toolbar-poi-label-back-color-active);
+}

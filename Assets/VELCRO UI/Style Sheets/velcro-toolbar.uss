@@ -1,0 +1,237 @@
+.toolbar-collapse {
+    height: 1080px;
+}
+
+.toolbar-collapse-item-bar {
+    width: 175px;
+    background-color: var(--toolbar-collapse-background-colour);
+    min-height: 1080px;
+}
+
+.toolbar-collapse-contract-container {
+    width: 46px;
+    height: 886px;
+}
+
+.toolbar-collapse-contract-button {
+    background-image: var(--toolbar-collapse-contract-sprite);
+    background-color: var(--toolbar-collapse-contract-expand-background-colour);
+}
+
+.toolbar-collapse-contract-button:hover:enabled {
+    background-color: var(--toolbar-collapse-contract-expand-background-colour);
+}
+
+.toolbar-collapse-arrow-button {
+    background-image: var(--toolbar-collapse-button-arrow);
+    top: 50%;
+    left: -35%;
+    width: 35px;
+    height: 38px;
+}
+
+.toolbar-collapse-complex-container {
+    padding-left: 10px;
+}
+
+.toolbar-collapse-simple-container {
+    padding-left: 10px;
+}
+
+.toolbar-collapse-item-group {
+    height: 223px;
+    background-color: var(--toolbar-collapse-item-group-background);
+    overflow: visible;
+}
+
+.toolbar-collapse-item-group:hover:enabled {
+    background-color: var(--toolbar-collapse-item-group-background);
+}
+
+.toolbar-collapse-item-group:hover:active:enabled {
+    background-color: var(--toolbar-collapse-item-group-background);
+}
+
+.toolbar-collapse-item-group-selected > .toolbar-collapse-content-group > .toolbar-collapse-item-icon {
+    border-color: var(--toolbar-collapse-selected-colour);
+}
+
+.toolbar-collapse-item-group-selected > .toolbar-collapse-content-group > .toolbar-collapse-item-icon > .toolbar-collapse-icon-image {
+    -unity-background-image-tint-color: var(--toolbar-collapse-selected-colour);
+}
+
+.toolbar-collapse-item-group-selected > .toolbar-collapse-content-group > .toolbar-collapse-item-label {
+    color: var(--toolbar-collapse-selected-colour);
+}
+
+.toolbar-collapse-content-group {
+}
+
+.toolbar-collapse-content-group-complex {
+    height: 136px;
+}
+
+.toolbar-collapse-content-group-simple {
+    height: 75px;
+}
+
+.toolbar-collapse-item-group-simple {
+    height: 100px;
+    background-color: var(--toolbar-collapse-item-group-background);
+    overflow: visible;
+}
+
+.toolbar-collapse-item-group-simple:hover:enabled {
+    background-color: var(--toolbar-collapse-item-group-background);
+}
+
+.toolbar-collapse-item-group-simple:hover:active:enabled {
+    background-color: var(--toolbar-collapse-item-group-background);
+}
+
+.toolbar-collapse-item-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border-color: var(--toolbar-collapse-item-colour);
+    margin-bottom: 15px;
+}
+
+.toolbar-collapse-icon-image {
+    -unity-background-image-tint-color: var(--toolbar-collapse-item-colour);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.toolbar-collapse-item-label {
+    width: 115px;
+    height: 56px;
+    overflow: hidden;
+    white-space: normal;
+    color: var(--toolbar-collapse-item-colour);
+    text-overflow: clip;
+}
+
+.toolbar-collapse-seperator {
+    width: 111px;
+    height: 1px;
+    background-color: var(--toolbar-collapse-seperator-line-colour);
+}
+
+.toolbar-collapse-expand-container {
+}
+
+.toolbar-collapse-expand-container-button {
+}
+
+.toolbar-collapse-closed {
+    width: 97px;
+    height: 886px;
+    max-width: initial;
+    max-height: initial;
+}
+
+.toolbar-collapse-closed > .toolbar-collapse-expand-container {
+    margin-left: 175px;
+    width: 97px;
+    height: 886px;
+    display: flex;
+}
+
+.toolbar-collapse-closed > .toolbar-collapse-expand-container > .toolbar-collapse-expand-container-button {
+    position: absolute;
+    width: 97px;
+    height: 886px;
+    background-color: var(--toolbar-collapse-item-group-background);
+    -unity-background-image-tint-color: var(--toolbar-collapse-expand-button-colour);
+    border-width: 0;
+    background-image: var(--toolbar-collapse-expand-sprite);
+}
+
+.toolbar-collapse-closed > .toolbar-collapse-expand-container > .toolbar-collapse-expand-container-button > .toolbar-collapse-arrow-button {
+    position: absolute;
+    left: 25px;
+    top: 415px;
+    width: 37px;
+    height: 57px;
+    background-image: var(--toolbar-collapse-expand-arrow);
+}
+
+.toolbar-collapse-closed > .toolbar-collapse-item-bar {
+    display: none;
+}
+
+.toolbar-collapse-closed > .toolbar-collapse-contract-container {
+    display: none;
+}
+
+.toolbar-collapse-selected-bar {
+    background-color: var(--toolbar-collapse-selected-colour);
+    width: 11px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.toolbar-static {
+    width: 175px;
+    background-color: var(--toolbar-static-background-colour);
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 760px;
+}
+
+.toolbar-static-icon-image {
+    -unity-background-image-tint-color: var(--toolbar-static-item-colour);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.toolbar-static-item-label {
+    width: 138px;
+    height: 58px;
+    overflow: hidden;
+    white-space: normal;
+    color: var(--toolbar-static-item-colour);
+}
+
+.toolbar-static-selected-bar {
+    background-color: var(--toolbar-static-selected-colour);
+    width: 11px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.toolbar-static-icon-container {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    border-color: var(--toolbar-static-item-colour);
+}
+
+.toolbar-static-item-group {
+    height: 145px;
+    background-color: var(--toolbar-static-item-group-background);
+}
+
+.toolbar-static-item-group-selected > .toolbar-static-content-group > .toolbar-static-icon-container > .toolbar-static-icon-image {
+    -unity-background-image-tint-color: var(--toolbar-static-selected-colour);
+}
+
+.toolbar-static-item-group-selected > .toolbar-static-content-group > .toolbar-static-icon-container {
+    border-color: var(--toolbar-static-selected-colour);
+}
+
+.toolbar-static-item-group-selected > .toolbar-static-content-group > .toolbar-static-item-label {
+    color: var(--toolbar-static-selected-colour);
+}
+
+.toolbar-static-content-group {
+    height: 136px;
+}
+
+.toolbar-static-item-group:hover:enabled {
+    background-color: var(--toolbar-collapse-item-group-background);
+}
+
+.toolbar-static-item-group:hover:active:enabled {
+    background-color: var(--toolbar-collapse-item-group-background);
+}

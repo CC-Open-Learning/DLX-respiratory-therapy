@@ -1,0 +1,60 @@
+.objectviewer {
+    background-color: var(--objectviewer-background-colour);
+    border-color: var(--objectviewer-border-color);
+    min-width: 1400px;
+    max-width: 1400px;
+    min-height: 900px;
+}
+
+.objectviewer-canvas {
+    background-color: var(--canvas-dim-colour);
+}
+
+.objectviewer-affordance-container {
+    justify-content: space-evenly;
+}
+
+.objectviewer-label-rotate {
+    color: var(--objectviewer-label-rotate-colour);
+}
+
+.objectviewer-label-zoom {
+    color: var(--objectviewer-label-zoom-colour);
+}
+
+.objectviewer-image {
+    -unity-background-image-tint-color: var(--objectviewer-image-tint-colour);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 48px;
+    height: 48px;
+}
+
+.objectviewer-image-rotate {
+    background-image: var(--objectviewer-image-rotate);
+}
+
+.objectviewer-image-zoom {
+    background-image: var(--objectviewer-image-zoom);
+}
+
+.objectviewer-btn-close {
+    top: 20px;
+    right: 20px;
+}
+
+.objectviewer-world-image {
+    width: 105%;
+}
+
+.objectviewer-container-information {
+    margin-top: 160px;
+}
+
+.objectviewer-label-name {
+    color: var(--objectviewer-label-name-colour);
+}
+
+.objectviewer-label-description {
+    color: var(--objectviewer-label-description-colour);
+    font-size: 26px;
+}

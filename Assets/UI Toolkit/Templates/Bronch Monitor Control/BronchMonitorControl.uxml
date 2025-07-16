@@ -1,0 +1,11 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="BronchMonitorControllerButtons" src="project://database/Assets/UI%20Toolkit/Templates/Bronch%20Monitor%20Control/BronchMonitorControlButton.uxml?fileID=9197481963319205126&amp;guid=b0757f060ab13b44b8daaec59a22e545&amp;type=3#BronchMonitorControlButton" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-bronch-monitor-controls.uss?fileID=7433441132597879392&amp;guid=64db9ad6b7e600b4c8e0b3537369ec08&amp;type=3#rt-bronch-monitor-controls" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <engine:VisualElement name="Panel" class="bronch-monitor-control-panel-size align-items-center br-20 justify-center">
+        <engine:Instance template="BronchMonitorControllerButtons" name="TopContainer" class="grow justify-center align-self-center align-items-center" />
+        <engine:Instance template="BronchMonitorControllerButtons" name="BottomContainer" class="grow justify-center align-self-center align-items-center" />
+    </engine:VisualElement>
+</engine:UXML>

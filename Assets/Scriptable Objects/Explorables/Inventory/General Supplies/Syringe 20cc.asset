@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Syringe 20cc
+  m_EditorClassIdentifier: 
+  ExplorableName: 20 cc Syringe
+  ExplorableDescription: These syringes are commonly used for precise liquid dispensing
+    and are designed for easy, single-use applications. 20 cc is the same as 20 mL.
+  ExplorableSprite: {fileID: 21300000, guid: 4b021dd6fe5eede4f9abe99a6a23d7ea, type: 3}
+  ExplorableCategory: 1
+  PoiType: 11
+  ExplorableAudioClip: {fileID: 8300000, guid: a0dfcc7dbe00646439f4e0a9827030e2, type: 3}

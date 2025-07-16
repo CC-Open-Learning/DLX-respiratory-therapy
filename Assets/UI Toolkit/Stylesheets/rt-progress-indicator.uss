@@ -1,0 +1,3 @@
+.progress-indicator-task-holder {
+	max-height: 640px;
+}

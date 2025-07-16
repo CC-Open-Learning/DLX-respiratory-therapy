@@ -1,0 +1,33 @@
+.restart-modal-canvas{
+    background-color:var(--restart-canvas-background-colour) ;
+}
+
+.restart-modal-window{
+    min-width: 827px;
+    min-height: 354px;
+}
+
+.restart-modal-content{
+    flex-direction: column;
+}
+
+.restart-modal-description-text{
+    color: var(--restart-modal-description-text-color) ;
+    font-size: 28px;
+    margin-top: 41px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.restart-modal-button-container{
+    flex-direction: row;
+    flex-shrink: 1;
+}
+
+.restart-modal-button{
+    margin-bottom: 20px;
+    margin-right: 35px;
+}
+
+
+

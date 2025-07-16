@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: DAR Connector
+  m_EditorClassIdentifier: 
+  ExplorableName: DAR Connector
+  ExplorableDescription: "The DAR connector is a combined plastic swivel and silicone
+    port that connects the endotracheal tube to the flex tube. The swivel is a 15
+    mm ID universal connector that will connect to endotracheal tubes and most tracheostomy
+    tubes. \n\nThe port allows passage of the fibreoptic end of the bronchoscope.
+    Lubricant is often required to facilitate smooth passage of the scope.\r"
+  ExplorableSprite: {fileID: 21300000, guid: ae626e2f7083aaf448c158518b59bb13, type: 3}
+  ExplorableCategory: 2
+  PoiType: 11
+  ExplorableAudioClip: {fileID: 8300000, guid: 29a1de612307cee42803fb6d95d825f7, type: 3}

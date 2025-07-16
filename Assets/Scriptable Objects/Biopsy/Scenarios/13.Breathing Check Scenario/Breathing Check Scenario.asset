@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6e968338d535f408fc980e015b118f, type: 3}
+  m_Name: Breathing Check Scenario
+  m_EditorClassIdentifier: 
+  ScenarioName: Check Patient Breathing
+  ScenarioTaskList:
+  - {fileID: 11400000, guid: 55fb3271e16ef5e4d9c13a715662b19a, type: 2}
+  - {fileID: 11400000, guid: bf8cf349dbb9a434b94734ed30256d49, type: 2}
+  - {fileID: 11400000, guid: 1b17b7e20a1631b4fbf8221f9999be7e, type: 2}
+  - {fileID: 11400000, guid: 6a3359e9bfa167746a4a3a953bdf10e8, type: 2}
+  - {fileID: 11400000, guid: 41a4354cfbdb33943a94f9925f05265a, type: 2}
+  ShowInHandbook: 1

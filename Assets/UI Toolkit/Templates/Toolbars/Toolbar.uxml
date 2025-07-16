@@ -1,0 +1,13 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/rt-toolbar.uss?fileID=7433441132597879392&amp;guid=e4d287a859887154990baf80ad9a5326&amp;type=3#rt-toolbar" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <engine:VisualElement name="Toolbar" class="absolute toolbar flex-row br-10 m-32">
+        <engine:Button name="HomeButton" class="bw-2 br-10 m-0 align-items-center justify-center mr-12 toolbar-btn">
+            <engine:VisualElement name="Image" class="toolbar-btn-image toolbar-btn-image-home" />
+        </engine:Button>
+        <engine:Button name="HandbookButton" class="bw-2 br-10 m-0 align-items-center justify-center toolbar-btn">
+            <engine:VisualElement name="Image" class="toolbar-btn-image toolbar-btn-image-back" />
+        </engine:Button>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Bronch_ScopeBrackets
+  m_EditorClassIdentifier: 
+  ExplorableName: Scope Brackets
+  ExplorableDescription: "Scope brackets can safely hold the bronchoscope when it
+    is not in use. \n\nAlways be careful to ensure that the endotracheal portion
+    of the bronchoscope does not touch anything! It must hang free without touching
+    the bronch tower or the floor."
+  ExplorableSprite: {fileID: 0}
+  ExplorableCategory: 4
+  PoiType: 1
+  ExplorableAudioClip: {fileID: 8300000, guid: 6263e5aa56dbd004f86114cf138ef0f7, type: 3}

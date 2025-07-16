@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6e968338d535f408fc980e015b118f, type: 3}
+  m_Name: Patient Bleeding Scenario
+  m_EditorClassIdentifier: 
+  ScenarioName: Address Patient's Bleeding Airway
+  ScenarioTaskList:
+  - {fileID: 11400000, guid: 4ed5bb677cb1a66489588a8db216aa3b, type: 2}
+  - {fileID: 11400000, guid: e2ffe752f06ba4489880db23840dacbc, type: 2}
+  - {fileID: 11400000, guid: 769cef4dfbbf946a497c6888cf01937a, type: 2}
+  - {fileID: 11400000, guid: 23f54c2dc3bb1294a82b72a7aeaab5d2, type: 2}
+  - {fileID: 11400000, guid: a32bc93859771784e93c1fbd97f015d5, type: 2}
+  - {fileID: 11400000, guid: 44b3b76dd850acf4bb31bc5e33ba4e41, type: 2}
+  - {fileID: 11400000, guid: fbd205a4d843b794eb07a3e03e325686, type: 2}
+  ShowInHandbook: 1

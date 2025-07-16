@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6e968338d535f408fc980e015b118f, type: 3}
+  m_Name: Initial Bronchmonitor Scenario
+  m_EditorClassIdentifier: 
+  ScenarioName: Observe airway image from the Bronchoscpe
+  ScenarioTaskList:
+  - {fileID: 11400000, guid: ec698e094f1b44d3791e025ec5d4b1ab, type: 2}
+  - {fileID: 11400000, guid: 2025f0236a0ef417e8b8c860e86a3385, type: 2}
+  - {fileID: 11400000, guid: 51df64719b58d4be09df6cf66f3eb7ca, type: 2}
+  ShowInHandbook: 1

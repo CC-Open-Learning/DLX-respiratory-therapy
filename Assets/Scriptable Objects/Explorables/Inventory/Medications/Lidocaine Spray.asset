@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0749bc2c21a265344a5ae342d11cbc50, type: 3}
+  m_Name: Lidocaine Spray
+  m_EditorClassIdentifier: 
+  ExplorableName: Lidocaine Topical Solution Spray 12mg
+  ExplorableDescription: Topical anesthesia primarily used on mucous membranes. This
+    spray helps to reduce discomfort caused by procedural stimulation in the nasal
+    passages, nasopharynx, pharynx, and hypopharynx.
+  ExplorableSprite: {fileID: 21300000, guid: b08a598657abdf14fac253cd9d306b9d, type: 3}
+  ExplorableCategory: 0
+  PoiType: 11
+  ExplorableAudioClip: {fileID: 8300000, guid: 2cf94fd20d6e9c34d89fe9b1cb561fee, type: 3}
